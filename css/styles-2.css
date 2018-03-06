@@ -1,0 +1,264 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+}
+
+/* Bio Info */
+
+#bio {
+	background: #1f1f91;
+	max-width: 250px;
+	min-width: 250px;
+	padding-top: 100px;
+	border-right: 7px solid #00004d;
+	position: fixed;
+}
+
+#profile-pic {
+	width: 150px;
+	border: solid 5px;
+	border-color: #ffffff;
+	margin-left: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.name {
+	font-size: 30px;
+	color: white;
+	padding-bottom: 5px;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+}
+
+.bio-text {
+	color: white;
+	font-size: 16px;
+	padding-bottom: 5px;
+	text-align: center;
+	
+}
+
+.nav-buttons {
+	list-style: none;
+	margin-top: 20px;
+	line-height: 42px;
+}
+
+.art {
+	padding-right: 207px;
+}
+
+.dance {
+	padding-right: 185px;
+}
+
+.music {
+	padding-right: 185px;
+}
+
+.web-development {
+	padding-right: 75px;
+}
+
+.art,
+.dance,
+.music,
+.web-development {
+	text-decoration: none;
+	background: #3c3cb5;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	font-size: 20px;
+	font-family: monospace;
+	color: #837af2;
+}
+
+.art:hover,
+.dance:hover,
+.music:hover,
+.web-development:hover,
+.art:active,
+.dance:active,
+.music:active
+.web-development:active {
+	background: #4b4bb9;
+	color: #b2b2f4;
+}
+
+.p-indents p {
+	text-indent: 1.2em;
+}
+
+h2 {
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+h4 {
+	padding-top: 10px;
+}
+
+main {
+	margin-left: 256px;
+	
+}
+
+.art-portfolio {
+	background: #9da0db;
+	font-size: 16px;
+	padding-bottom: 400px;
+	padding-left: 15px;
+	padding-right: 5px;
+	padding-top: 10px;
+}
+
+.dancing-portfolio {
+	background: #d3d3ff;
+	font-size: 16px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 5px;
+	padding-top: 10px;
+}
+
+.song-portfolio {
+	background: #9da0db;
+	font-size: 16px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 5px;
+	padding-top: 10px;
+}
+
+#aandra-sanders {
+	height: 450.5px;
+	width: 335px;
+	margin-left: 5px;
+	float: left;
+	margin-right: 10px;
+}
+
+article ul {
+	margin-left: 40px;
+}
+
+article ul li {
+	width: 90%;
+}
+	
+@media screen and (min-width: 481px) and (max-width: 1279px) {
+	
+	body {
+		background: pink;
+	}
+	
+	.aandra {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#aandra-sanders {
+		margin-top: 5px;
+		margin-left: 20%;
+	}
+	
+	.vertical-p {
+		margin-top: 10px;
+		max-width: 685px;
+	}
+	
+	.portfolio-flex {
+		display: flex;
+		flex-direction: column;
+		margin-left: 20%;
+	}
+	
+	.art-portfolio {
+		max-width: 72.3%;
+		min-width: 268px;
+	}
+	
+	.dancing-portfolio {
+		margin-top: 25px;
+		margin-left: 0px;
+		max-width: 72.3%;
+		min-width: 268px;
+	}
+
+	.song-portfolio {
+		margin-top: 25px;
+		margin-left: 0px;
+		max-width: 72.3%;
+		min-width: 268px;
+		margin-bottom: 50px;
+	}
+	
+	article ul li {
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		background: lightblue;
+	}
+
+	.profile-pic {
+		width: 120px;
+	}
+	
+	.aandra {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#aandra-sanders {
+		height: 95%;
+		width: 85%;
+		margin-top: 5px;
+		margin-left: 5%;
+	}
+	
+	.vertical-p {
+		margin-top: 10px;
+		padding-right: 15px;
+	}
+	
+	.portfolio-flex {
+		display: flex;
+		flex-direction: column;
+		margin-left: 0%;
+	}
+	
+	.art-portfolio {
+		max-width: 87.8%;
+		min-width: 4px;
+		margin-right: 10px;
+		box-shadow: 5px 5px 5px rgba(103, 73, 132, 0.76);
+	}
+	
+	.dancing-portfolio {
+		margin-left: 0px;
+		max-width: 80.8%;
+		min-width: 197px;
+		box-shadow: 5px 5px 5px rgba(103, 73, 132, 0.76);
+	}
+
+	.song-portfolio {
+		margin-left: 0px;
+		max-width: 80.8%;
+		min-width: 197px;
+		margin-bottom: 50px;
+		box-shadow: 5px 5px 5px rgba(103, 73, 132, 0.76);
+	}
+	
+	article ul {
+		margin-left: 10px;
+	}
+}
