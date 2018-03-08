@@ -3,8 +3,10 @@
 	padding: 0;
 }
 
-body {
-	display: flex;
+#flex-all {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 /* Bio Info */
@@ -15,7 +17,12 @@ body {
 	min-width: 250px;
 	padding-top: 100px;
 	border-right: 7px solid #00004d;
-	position: fixed;
+}
+
+nav {
+    position: fixed;
+	max-width: 250px;
+	min-width: 250px;
 }
 
 #profile-pic {
@@ -37,7 +44,7 @@ body {
 
 .bio-text {
 	color: white;
-	font-size: 16px;
+	font-size: 18px;
 	padding-bottom: 5px;
 	text-align: center;
 	
@@ -45,30 +52,41 @@ body {
 
 .nav-buttons {
 	list-style: none;
+    text-align: center;
 	margin-top: 20px;
 	line-height: 42px;
 }
 
-.art {
-	padding-right: 207px;
+.home {
+    
 }
 
-.dance {
-	padding-right: 185px;
+.about-me {
+    
 }
 
-.music {
-	padding-right: 185px;
+.resume {
+    
 }
 
-.web-development {
-	padding-right: 75px;
+.web-projects {
+    
 }
 
-.art,
-.dance,
-.music,
-.web-development {
+.writing {
+    
+}
+
+.contact {
+    
+}
+
+.home,
+.about-me,
+.resume,
+.web-projects,
+.writing,
+.contact {
 	text-decoration: none;
 	background: #3c3cb5;
 	padding-top: 10px;
@@ -79,17 +97,24 @@ body {
 	color: #837af2;
 }
 
-.art:hover,
-.dance:hover,
-.music:hover,
-.web-development:hover,
-.art:active,
-.dance:active,
-.music:active
-.web-development:active {
+.home:hover,
+.about-me:hover,
+.resume:hover,
+.web-projects:hover,
+.writing:hover,
+.contact:hover,
+.home:active,
+.about-me:active,
+.resume:active
+.web-projects:active
+.writing:active,
+.contact:active {
 	background: #4b4bb9;
 	color: #b2b2f4;
 }
+
+
+/* Main */
 
 .p-indents p {
 	text-indent: 1.2em;
@@ -102,11 +127,6 @@ h2 {
 
 h4 {
 	padding-top: 10px;
-}
-
-main {
-	margin-left: 256px;
-	
 }
 
 .art-portfolio {
@@ -154,49 +174,17 @@ article ul li {
 	
 @media screen and (min-width: 481px) and (max-width: 1279px) {
 	
-	body {
+	.art-portfolio {
 		background: pink;
-	}
-	
-	.aandra {
-		display: flex;
-		flex-direction: column;
 	}
 	
 	#aandra-sanders {
 		margin-top: 5px;
-		margin-left: 20%;
 	}
 	
 	.vertical-p {
 		margin-top: 10px;
 		max-width: 685px;
-	}
-	
-	.portfolio-flex {
-		display: flex;
-		flex-direction: column;
-		margin-left: 20%;
-	}
-	
-	.art-portfolio {
-		max-width: 72.3%;
-		min-width: 268px;
-	}
-	
-	.dancing-portfolio {
-		margin-top: 25px;
-		margin-left: 0px;
-		max-width: 72.3%;
-		min-width: 268px;
-	}
-
-	.song-portfolio {
-		margin-top: 25px;
-		margin-left: 0px;
-		max-width: 72.3%;
-		min-width: 268px;
-		margin-bottom: 50px;
 	}
 	
 	article ul li {
@@ -205,7 +193,7 @@ article ul li {
 }
 
 @media screen and (max-width: 480px) {
-	body {
+	.art-portfolio {
 		background: lightblue;
 	}
 
@@ -213,49 +201,17 @@ article ul li {
 		width: 120px;
 	}
 	
-	.aandra {
-		display: flex;
-		flex-direction: column;
-	}
-	
 	#aandra-sanders {
-		height: 95%;
-		width: 85%;
 		margin-top: 5px;
-		margin-left: 5%;
 	}
 	
 	.vertical-p {
 		margin-top: 10px;
 		padding-right: 15px;
 	}
-	
-	.portfolio-flex {
-		display: flex;
-		flex-direction: column;
-		margin-left: 0%;
-	}
-	
-	.art-portfolio {
-		max-width: 87.8%;
-		min-width: 4px;
-		margin-right: 10px;
-		box-shadow: 5px 5px 5px rgba(103, 73, 132, 0.76);
-	}
-	
-	.dancing-portfolio {
-		margin-left: 0px;
-		max-width: 80.8%;
-		min-width: 197px;
-		box-shadow: 5px 5px 5px rgba(103, 73, 132, 0.76);
-	}
 
 	.song-portfolio {
-		margin-left: 0px;
-		max-width: 80.8%;
-		min-width: 197px;
 		margin-bottom: 50px;
-		box-shadow: 5px 5px 5px rgba(103, 73, 132, 0.76);
 	}
 	
 	article ul {
