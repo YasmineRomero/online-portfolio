@@ -15,7 +15,7 @@
 	background: #1f1f91;
 	max-width: 250px;
 	min-width: 250px;
-	padding-top: 100px;
+	padding-top: 50px;
 	border-right: 7px solid #00004d;
 }
 
@@ -28,14 +28,18 @@ nav {
 #profile-pic {
 	width: 150px;
 	border: solid 5px;
-	border-color: #ffffff;
+	border-color: white;
 	margin-left: 50px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 
 .name {
-	font-size: 30px;
+	font-size: 45px;
 	color: white;
 	padding-bottom: 5px;
 	text-align: center;
@@ -43,6 +47,7 @@ nav {
 }
 
 .bio-text {
+    font-family: 'Lato', sans-serif;
 	color: white;
 	font-size: 18px;
 	padding-bottom: 5px;
@@ -55,6 +60,24 @@ nav {
     text-align: center;
 	margin-top: 20px;
 	line-height: 42px;
+}
+
+.nav-buttons li {
+    margin-bottom: 10px;
+}
+
+.portfolio {
+	text-decoration: none;
+	background: #3c3cb5;
+	padding: 10px;
+	font-size: 20px;
+    font-family: 'Lato', sans-serif;
+	color: #837af2;
+    border-radius: 10px;
+}
+
+#hide-portfolio {
+    display: none;
 }
 
 .home {
@@ -89,12 +112,11 @@ nav {
 .contact {
 	text-decoration: none;
 	background: #3c3cb5;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
+	padding: 10px;
 	font-size: 20px;
-	font-family: monospace;
+    font-family: 'Lato', sans-serif;
 	color: #837af2;
+    border-radius: 10px;
 }
 
 .home:hover,
@@ -105,8 +127,8 @@ nav {
 .contact:hover,
 .home:active,
 .about-me:active,
-.resume:active
-.web-projects:active
+.resume:active,
+.web-projects:active,
 .writing:active,
 .contact:active {
 	background: #4b4bb9;
@@ -130,8 +152,9 @@ h4 {
 }
 
 .art-portfolio {
+    font-family: 'Lato', sans-serif;
 	background: #9da0db;
-	font-size: 16px;
+	font-size: 20px;
 	padding-bottom: 400px;
 	padding-left: 15px;
 	padding-right: 5px;
@@ -139,8 +162,9 @@ h4 {
 }
 
 .dancing-portfolio {
+    font-family: 'Lato', sans-serif;
 	background: #d3d3ff;
-	font-size: 16px;
+	font-size: 20px;
 	padding-bottom: 10px;
 	padding-left: 15px;
 	padding-right: 5px;
@@ -148,8 +172,9 @@ h4 {
 }
 
 .song-portfolio {
+    font-family: 'Lato', sans-serif;
 	background: #9da0db;
-	font-size: 16px;
+	font-size: 20px;
 	padding-bottom: 10px;
 	padding-left: 15px;
 	padding-right: 5px;
