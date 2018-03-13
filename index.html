@@ -15,8 +15,8 @@
 </head>
 
 <body id="flex-all">
-   <aside id="bio">
-    <nav>	
+    <aside id="bio">
+    <nav id="bio">	
         <p class="name">Yasmine C. Romero</p>
         <img id="profile-pic" src="images/profile-pic.JPG" alt="A photo of myself.">
         <p class="bio-text">I am currently learning web programming at the Center for Advanced Research and Technology and a Junior in High School.</p>
@@ -25,7 +25,7 @@
             <li><a class="home" href="index.html">Home</a></li>
             <li><a class="about-me" href="about-me.html">About Me</a></li>
             <li><a class="resume" href="resume.html">Resume</a></li>
-            <li class="portfolio" onclick="showPortfolio()">Portfolio &#x25BC
+            <li class="portfolio" onclick="showPortfolio()">Portfolio &#x25BC;
                <div id="hide-portfolio">
                     <ul>
                         <li><a class="web-projects" href="web-projects.html">Web Development</a></li>
@@ -37,62 +37,22 @@
         </ul>
     </nav>
    </aside>
-	<main>
-		<article class="art-portfolio">
-			<h2>Art Portfolio</h2>
-			<span class="aandra p-indents">
-				<img id="aandra-sanders" src="images/aandra-sanders.JPG">
-				<p>Since I need to learn how to draw clothes other than the standard t-shirt and monocolor pants, I decided to go with a new kind of outfit. I decided to come up with a not too fancy dress and an overcoat that connects with a "golden" chain to support it. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quo numquam, autem dolore mollitia earum quibusdam, tempora corporis, explicabo tenetur porro fugit sequi. Minus voluptates inventore atque, saepe rerum quidem.</p>
-				</span>
-		</article>
-		<article class="dancing-portfolio p-indents">
-			<h2>Dancing Portfolio</h2>
-			<p>Ever since I heard music, my feet have been moving to the rhythm. Any music-themed movie got my inspiration to dance to soar.</p>
-			<h4>Songs I Have Choreographed:</h4>
-			<ul>
-				<li>Now You're Gone - Basshunter</li>
-				<li>Not Fragile - Christina Grimmie</li>
-			</ul>
-		</article>
-		<article class="song-portfolio p-indents">
-			<h2>Song Portfolio</h2>
-			<p>I always had a burning passion to learn how to make music and to play instruments ever since I was a child. At seven years old, I became determined to learn my first instrument. Due to reasons beyond my control, I was unable to play any instruments until I was fifteen years old. At this point, I finally saved up enough money to buy my first instrument: the acoustic guitar.</p>
-			<p>The acoustic guitar is what really got me interested in music. Nothing in my life could ever compare to the wonderful sound that guitar strings make when played just right. Thankfully, within two weeks, I learned how to play my first song: If I Had You by Adam Lambert.</p>
-			<p>In no time, I picked up an electric guitar, recorder, ukulele, and penny whistle. I aspire to pick up more instruments in the future.</p>
-			<h4>Learned Songs</h4>
-			<ul>
-				<li>Guitar
-					<ul>
-						<li>If I Had You - Adam Lambert</li>
-						<li>thnks fr th mmrs - Fall Out Boy</li>
-						<li>The Haunting - Set It Off</li>
-						<li>Kiss Me Kill Me - Mest</li>
-						<li>Main Theme - Higurashi no Naku Koro Ni</li>
-						<li>Campfire Song Song - Spongebob Squarepants</li>
-						<li>Look What You Made Me Do - Taylor Swift</li>
-					</ul>
-				</li>
-				<li>
-					Ukulele
-					<ul>
-						<li>If I Had You - Adam Lambert</li>
-						<li>thnks fr th mmrs - Fall Out Boy</li>
-						<li>The Haunting - Set It Off</li>
-						<li>Kiss Me Kill Me - Mest</li>
-						<li>Main Theme - Higurashi no Naku Koro Ni</li>
-						<li>Campfire Song Song - Spongebob Squarepants</li>
-						<li>Look What You Made Me Do - Taylor Swift</li>
-					</ul>
-				</li>
-				<li>Pennywhistle
-					<ul>
-						<li>Bad Apple!! - Tohou Project</li>
-						<li>Tetris Theme (Korobeiniki)</li>
-					</ul>
-				</li>
-			</ul>
-		</article>
-	</main>
+    <main>
+        <div id="parallax-image">
+            <button id="skip-parallax" onclick="scrollIntoView()">&#x25BC;</button>
+        </div>
+        <article>
+            <div id="main-parallax">
+                <h1>Welcome!</h1>
+                <br>
+                <br>
+                <p class="p-indents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nulla quasi ipsum neque, similique voluptatibus, itaque suscipit molestiae repudiandae officia obcaecati odio ab dolorem aut pariatur, veritatis fugiat voluptate dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam culpa molestiae quisquam minima at et sapiente quae, cum omnis temporibus iste, commodi explicabo nam nostrum blanditiis libero velit iure optio.</p>
+                <p class="p-indents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sit atque dolorem ad dolore, nihil error sed in aspernatur aut neque pariatur, quia nemo id, autem aliquam excepturi mollitia dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita numquam, aut eius itaque voluptates porro explicabo, impedit quidem reprehenderit assumenda maiores officiis magni et rerum ipsam, inventore ab, nihil ipsum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aut temporibus totam ut sequi, quam. Iusto illo error optio sint numquam eaque, perferendis pariatur esse deserunt eius asperiores ducimus ex.</p>
+                <p class="p-indents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nulla quasi ipsum neque, similique voluptatibus, itaque suscipit molestiae repudiandae officia obcaecati odio ab dolorem aut pariatur, veritatis fugiat voluptate dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam culpa molestiae quisquam minima at et sapiente quae, cum omnis temporibus iste, commodi explicabo nam nostrum blanditiis libero velit iure optio.</p>
+                <p class="p-indents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sit atque dolorem ad dolore, nihil error sed in aspernatur aut neque pariatur, quia nemo id, autem aliquam excepturi mollitia dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita numquam, aut eius itaque voluptates porro explicabo, impedit quidem reprehenderit assumenda maiores officiis magni et rerum ipsam, inventore ab, nihil ipsum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aut temporibus totam ut sequi, quam. Iusto illo error optio sint numquam eaque, perferendis pariatur esse deserunt eius asperiores ducimus ex.</p>
+            </div>
+        </article>
+    </main>
 </body>
 
 </html>

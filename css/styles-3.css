@@ -3,33 +3,40 @@
 	padding: 0;
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    background: #1f1f91;
+}
+
 #flex-all {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    height: 100%;
 }
 
 /* Bio Info */
 
 #bio {
 	background: #1f1f91;
-	max-width: 250px;
-	min-width: 250px;
-	padding-top: 50px;
-	border-right: 7px solid #00004d;
+	max-width: 350px;
+	min-width: 350px;
 }
 
 nav {
+    padding-top: 120px;
     position: fixed;
-	max-width: 250px;
-	min-width: 250px;
+	max-width: 350px;
+	min-width: 350px;
 }
 
 #profile-pic {
 	width: 150px;
 	border: solid 5px;
 	border-color: white;
-	margin-left: 50px;
+	margin-left: 100px;
 	margin-top: 10px;
 	margin-bottom: 10px;
     border-bottom-left-radius: 50%;
@@ -138,17 +145,101 @@ nav {
 
 /* Main */
 
-.p-indents p {
+#parallax-image {
+	border-left: 7px solid #00004d;
+    background: url(../images/index-header.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100%;
+}
+
+#skip-parallax {
+    background: rgba(0, 0, 77, 0.42);
+    padding: 10px 15px;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    font-size: 50px;
+    position: absolute;
+    top: 600px;
+    left: 1085px;
+    color: black;
+    text-decoration: none;
+}
+
+#skip-parallax:active {
+    color: black;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.p-indents {
 	text-indent: 1.2em;
 }
 
-h2 {
-	padding-bottom: 5px;
-	text-align: center;
+main p {
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
-h4 {
-	padding-top: 10px;
+#main-parallax {
+	border-top: 7px solid #00004d;
+	border-left: 7px solid #00004d;
+    background: #9da0db;
+    padding-bottom: 20px;
+}
+
+img {
+    margin-left: 570px;
+}
+	
+@media screen and (min-width: 481px) and (max-width: 1279px) {
+	
+	.vertical-p {
+		margin-top: 10px;
+		max-width: 685px;
+	}
+	
+	article ul li {
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.profile-pic {
+		width: 120px;
+	}
+	
+	.vertical-p {
+		margin-top: 10px;
+		padding-right: 15px;
+	}
+	
+	article ul {
+		margin-left: 10px;
+	}
+}
+
+/*
+
+FOR BASE
+
+#aandra-sanders {
+	height: 450.5px;
+	width: 335px;
+	margin-left: 5px;
+	float: left;
+	margin-right: 10px;
 }
 
 .art-portfolio {
@@ -181,24 +272,12 @@ h4 {
 	padding-top: 10px;
 }
 
-#aandra-sanders {
-	height: 450.5px;
-	width: 335px;
-	margin-left: 5px;
-	float: left;
-	margin-right: 10px;
-}
 
-article ul {
-	margin-left: 40px;
-}
 
-article ul li {
-	width: 90%;
-}
-	
-@media screen and (min-width: 481px) and (max-width: 1279px) {
-	
+
+
+TABLET
+
 	.art-portfolio {
 		background: pink;
 	}
@@ -206,40 +285,83 @@ article ul li {
 	#aandra-sanders {
 		margin-top: 5px;
 	}
-	
-	.vertical-p {
-		margin-top: 10px;
-		max-width: 685px;
-	}
-	
-	article ul li {
-		margin-left: 10%;
-	}
-}
 
-@media screen and (max-width: 480px) {
-	.art-portfolio {
-		background: lightblue;
-	}
 
-	.profile-pic {
-		width: 120px;
-	}
+
+
+
+MOBILE
 	
 	#aandra-sanders {
 		margin-top: 5px;
 	}
-	
-	.vertical-p {
-		margin-top: 10px;
-		padding-right: 15px;
+
+	.art-portfolio {
+		background: lightblue;
 	}
 
 	.song-portfolio {
 		margin-bottom: 50px;
 	}
-	
-	article ul {
-		margin-left: 10px;
-	}
-}
+
+
+
+HTML
+
+
+		<article>
+			<h2>Art Portfolio</h2>
+			<span class="p-indents">
+				<p>Since I need to learn how to draw clothes other than the standard t-shirt and monocolor pants, I decided to go with a new kind of outfit. I decided to come up with a not too fancy dress and an overcoat that connects with a "golden" chain to support it. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quo numquam, autem dolore mollitia earum quibusdam, tempora corporis, explicabo tenetur porro fugit sequi. Minus voluptates inventore atque, saepe rerum quidem.</p>
+				</span>
+		</article>
+		<article class="p-indents">
+			<h2>Dancing Portfolio</h2>
+			<p>Ever since I heard music, my feet have been moving to the rhythm. Any music-themed movie got my inspiration to dance to soar.</p>
+			<h4>Songs I Have Choreographed:</h4>
+			<ul>
+				<li>Now You're Gone - Basshunter</li>
+				<li>Not Fragile - Christina Grimmie</li>
+			</ul>
+		</article>
+		<article class="p-indents">
+			<h2>Song Portfolio</h2>
+			<p>I always had a burning passion to learn how to make music and to play instruments ever since I was a child. At seven years old, I became determined to learn my first instrument. Due to reasons beyond my control, I was unable to play any instruments until I was fifteen years old. At this point, I finally saved up enough money to buy my first instrument: the acoustic guitar.</p>
+			<p>The acoustic guitar is what really got me interested in music. Nothing in my life could ever compare to the wonderful sound that guitar strings make when played just right. Thankfully, within two weeks, I learned how to play my first song: If I Had You by Adam Lambert.</p>
+			<p>In no time, I picked up an electric guitar, recorder, ukulele, and penny whistle. I aspire to pick up more instruments in the future.</p>
+			<h4>Learned Songs</h4>
+			<ul>
+				<li>Guitar
+					<ul>
+						<li>If I Had You - Adam Lambert</li>
+						<li>thnks fr th mmrs - Fall Out Boy</li>
+						<li>The Haunting - Set It Off</li>
+						<li>Kiss Me Kill Me - Mest</li>
+						<li>Main Theme - Higurashi no Naku Koro Ni</li>
+						<li>Campfire Song Song - Spongebob Squarepants</li>
+						<li>Look What You Made Me Do - Taylor Swift</li>
+					</ul>
+				</li>
+				<li>
+					Ukulele
+					<ul>
+						<li>If I Had You - Adam Lambert</li>
+						<li>thnks fr th mmrs - Fall Out Boy</li>
+						<li>The Haunting - Set It Off</li>
+						<li>Kiss Me Kill Me - Mest</li>
+						<li>Main Theme - Higurashi no Naku Koro Ni</li>
+						<li>Campfire Song Song - Spongebob Squarepants</li>
+						<li>Look What You Made Me Do - Taylor Swift</li>
+					</ul>
+				</li>
+				<li>Pennywhistle
+					<ul>
+						<li>Bad Apple!! - Tohou Project</li>
+						<li>Tetris Theme (Korobeiniki)</li>
+					</ul>
+				</li>
+			</ul>
+		</article>
+
+
+*\
