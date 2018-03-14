@@ -5,6 +5,7 @@
 
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -30,6 +31,10 @@ nav {
     position: fixed;
 	max-width: 350px;
 	min-width: 350px;
+}
+
+nav ul {
+    list-style: none;
 }
 
 #profile-pic {
@@ -59,6 +64,8 @@ nav {
 	font-size: 18px;
 	padding-bottom: 5px;
 	text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
 	
 }
 
@@ -75,12 +82,14 @@ nav {
 
 .portfolio {
 	text-decoration: none;
-	background: #3c3cb5;
+	background: #4c4cc7;
 	padding: 10px;
 	font-size: 20px;
     font-family: 'Lato', sans-serif;
-	color: #837af2;
+	color: #cbc7fa;
     border-radius: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 #hide-portfolio {
@@ -99,12 +108,21 @@ nav {
     
 }
 
-.web-projects {
-    
+.web-projects,
+.writing {
+	text-decoration: none;
+	background: #7e7ede;
+	padding: 10px;
+	font-size: 20px;
+    font-family: 'Lato', sans-serif;
+	color: #ffffff;
+    border-radius: 10px;
 }
 
-.writing {
-    
+.portfolio li a:hover,
+.portfolio li a:active {
+    background: #aaaaf2;
+    color: #ffffff;
 }
 
 .contact {
@@ -114,32 +132,26 @@ nav {
 .home,
 .about-me,
 .resume,
-.web-projects,
-.writing,
 .contact {
 	text-decoration: none;
-	background: #3c3cb5;
+	background: #4c4cc7;
 	padding: 10px;
 	font-size: 20px;
     font-family: 'Lato', sans-serif;
-	color: #837af2;
+	color: #cbc7fa;
     border-radius: 10px;
 }
 
 .home:hover,
 .about-me:hover,
 .resume:hover,
-.web-projects:hover,
-.writing:hover,
 .contact:hover,
 .home:active,
 .about-me:active,
 .resume:active,
-.web-projects:active,
-.writing:active,
 .contact:active {
-	background: #4b4bb9;
-	color: #b2b2f4;
+	background: #7e7ede;
+	color: #ffffff;
 }
 
 
@@ -180,15 +192,27 @@ h1 {
     padding-top: 40px;
 }
 
+h3 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+}
+
 .p-indents {
 	text-indent: 1.2em;
 }
 
-main p {
+.alignment p {
     font-size: 25px;
     font-family: 'Lato', sans-serif;
     margin-left: 300px;
     margin-right: 300px;
+}
+
+.resume-alignment p {
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 20px;
 }
 
 #main-parallax {
@@ -198,8 +222,24 @@ main p {
     padding-bottom: 20px;
 }
 
-img {
+#about-me-profile-pic {
+    border: solid black 7px;
     margin-left: 570px;
+    margin-bottom: 15px;
+}
+
+#resume ul {
+    font-family: 'Lato', sans-serif;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+#resume ul li,
+#resume ul li {
+    font-family: 'Lato', sans-serif;
+    margin-left: 50px;
+    font-size: 25px;
 }
 	
 @media screen and (min-width: 481px) and (max-width: 1279px) {
