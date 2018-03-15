@@ -241,33 +241,59 @@ h3 {
     margin-left: 50px;
     font-size: 25px;
 }
+
+.flex-it {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#letter-of-rec-1 img {
+    margin-top: 15px;
+}
+
+#letter-of-rec-1 img,
+#letter-of-rec-2 img {
+    margin-left: 300px;
+}
+
+.resume-left-align {
+    width: 70%;
+}
+
+.resume-right-align {
+    width: 70%;
+}
 	
 @media screen and (min-width: 481px) and (max-width: 1279px) {
 	
-	.vertical-p {
-		margin-top: 10px;
-		max-width: 685px;
-	}
-	
-	article ul li {
-		margin-left: 10%;
-	}
-}
+	#main-parallax {
+        background: #dfe0f7;
+    }
+    
+    #bio, nav {
+	    max-width: 250px;
+	    min-width: 250px;
+    }
+    
+    #profile-pic {
+        margin-left: 50px;
+    }
 
 @media screen and (max-width: 480px) {
-
-	.profile-pic {
-		width: 120px;
-	}
 	
-	.vertical-p {
-		margin-top: 10px;
-		padding-right: 15px;
-	}
-	
-	article ul {
-		margin-left: 10px;
-	}
+	#main-parallax {
+        background: #ffffff;
+    }
+    
+    #bio, nav {
+	    max-width: 150px;
+	    min-width: 150px;
+    }
+    
+    #profile-pic {
+        margin-left: 25px;
+    }
 }
 
 /*
