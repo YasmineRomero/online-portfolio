@@ -157,14 +157,20 @@ nav ul {
 
 /* Main */
 
-#parallax-image {
+#home-parallax-image {
 	border-left: 7px solid #00004d;
     background: url(../images/index-header.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    height: 100%;
+    height: 80%;
+}
+
+#placeholder-parallax-image {
+    background: url("http://via.placeholder.com/1766x865");
+    background-repeat: no-repeat;
+    height: 80%;
 }
 
 #skip-parallax {
@@ -177,25 +183,29 @@ nav ul {
     font-size: 50px;
     position: absolute;
     top: 600px;
-    left: 1085px;
+    left: 56.5%;
     color: black;
     text-decoration: none;
+    animation: magicfloat 2s infinite;
+}
+
+@keyframes magicfloat {
+    from{top:400px;}
+    to{top:450px;}
 }
 
 #skip-parallax:active {
     color: black;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'Lato', sans-serif;
     text-align: center;
     padding-top: 40px;
 }
 
-h3 {
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    padding-top: 40px;
+h1 {
+    font-size: 50px;
 }
 
 .p-indents {
@@ -215,6 +225,13 @@ h3 {
     margin-left: 20px;
 }
 
+.contact-alignment p {
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
 #main-parallax {
 	border-top: 7px solid #00004d;
 	border-left: 7px solid #00004d;
@@ -222,17 +239,25 @@ h3 {
     padding-bottom: 20px;
 }
 
-#about-me-profile-pic {
-    border: solid black 7px;
-    margin-left: 570px;
-    margin-bottom: 15px;
-}
-
 #resume ul {
     font-family: 'Lato', sans-serif;
     margin-top: 15px;
     margin-left: 20px;
     font-size: 25px;
+}
+
+form, .contact-alignment img {
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.vert-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+#resume {
+    margin-left: 12%;
 }
 
 #resume ul li,
@@ -258,11 +283,22 @@ h3 {
 }
 
 .resume-left-align {
-    width: 70%;
+    width: 40%;
 }
 
 .resume-right-align {
-    width: 70%;
+    width: 40%;
+    padding-left: 100px;
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.resume-left-align,
+.resume-right-align {
+    margin-bottom: 50px;
 }
 	
 @media screen and (min-width: 481px) and (max-width: 1279px) {
@@ -279,11 +315,12 @@ h3 {
     #profile-pic {
         margin-left: 50px;
     }
+}
 
 @media screen and (max-width: 480px) {
 	
 	#main-parallax {
-        background: #ffffff;
+        background: white;
     }
     
     #bio, nav {
@@ -295,139 +332,3 @@ h3 {
         margin-left: 25px;
     }
 }
-
-/*
-
-FOR BASE
-
-#aandra-sanders {
-	height: 450.5px;
-	width: 335px;
-	margin-left: 5px;
-	float: left;
-	margin-right: 10px;
-}
-
-.art-portfolio {
-    font-family: 'Lato', sans-serif;
-	background: #9da0db;
-	font-size: 20px;
-	padding-bottom: 400px;
-	padding-left: 15px;
-	padding-right: 5px;
-	padding-top: 10px;
-}
-
-.dancing-portfolio {
-    font-family: 'Lato', sans-serif;
-	background: #d3d3ff;
-	font-size: 20px;
-	padding-bottom: 10px;
-	padding-left: 15px;
-	padding-right: 5px;
-	padding-top: 10px;
-}
-
-.song-portfolio {
-    font-family: 'Lato', sans-serif;
-	background: #9da0db;
-	font-size: 20px;
-	padding-bottom: 10px;
-	padding-left: 15px;
-	padding-right: 5px;
-	padding-top: 10px;
-}
-
-
-
-
-
-TABLET
-
-	.art-portfolio {
-		background: pink;
-	}
-	
-	#aandra-sanders {
-		margin-top: 5px;
-	}
-
-
-
-
-
-MOBILE
-	
-	#aandra-sanders {
-		margin-top: 5px;
-	}
-
-	.art-portfolio {
-		background: lightblue;
-	}
-
-	.song-portfolio {
-		margin-bottom: 50px;
-	}
-
-
-
-HTML
-
-
-		<article>
-			<h2>Art Portfolio</h2>
-			<span class="p-indents">
-				<p>Since I need to learn how to draw clothes other than the standard t-shirt and monocolor pants, I decided to go with a new kind of outfit. I decided to come up with a not too fancy dress and an overcoat that connects with a "golden" chain to support it. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quo numquam, autem dolore mollitia earum quibusdam, tempora corporis, explicabo tenetur porro fugit sequi. Minus voluptates inventore atque, saepe rerum quidem.</p>
-				</span>
-		</article>
-		<article class="p-indents">
-			<h2>Dancing Portfolio</h2>
-			<p>Ever since I heard music, my feet have been moving to the rhythm. Any music-themed movie got my inspiration to dance to soar.</p>
-			<h4>Songs I Have Choreographed:</h4>
-			<ul>
-				<li>Now You're Gone - Basshunter</li>
-				<li>Not Fragile - Christina Grimmie</li>
-			</ul>
-		</article>
-		<article class="p-indents">
-			<h2>Song Portfolio</h2>
-			<p>I always had a burning passion to learn how to make music and to play instruments ever since I was a child. At seven years old, I became determined to learn my first instrument. Due to reasons beyond my control, I was unable to play any instruments until I was fifteen years old. At this point, I finally saved up enough money to buy my first instrument: the acoustic guitar.</p>
-			<p>The acoustic guitar is what really got me interested in music. Nothing in my life could ever compare to the wonderful sound that guitar strings make when played just right. Thankfully, within two weeks, I learned how to play my first song: If I Had You by Adam Lambert.</p>
-			<p>In no time, I picked up an electric guitar, recorder, ukulele, and penny whistle. I aspire to pick up more instruments in the future.</p>
-			<h4>Learned Songs</h4>
-			<ul>
-				<li>Guitar
-					<ul>
-						<li>If I Had You - Adam Lambert</li>
-						<li>thnks fr th mmrs - Fall Out Boy</li>
-						<li>The Haunting - Set It Off</li>
-						<li>Kiss Me Kill Me - Mest</li>
-						<li>Main Theme - Higurashi no Naku Koro Ni</li>
-						<li>Campfire Song Song - Spongebob Squarepants</li>
-						<li>Look What You Made Me Do - Taylor Swift</li>
-					</ul>
-				</li>
-				<li>
-					Ukulele
-					<ul>
-						<li>If I Had You - Adam Lambert</li>
-						<li>thnks fr th mmrs - Fall Out Boy</li>
-						<li>The Haunting - Set It Off</li>
-						<li>Kiss Me Kill Me - Mest</li>
-						<li>Main Theme - Higurashi no Naku Koro Ni</li>
-						<li>Campfire Song Song - Spongebob Squarepants</li>
-						<li>Look What You Made Me Do - Taylor Swift</li>
-					</ul>
-				</li>
-				<li>Pennywhistle
-					<ul>
-						<li>Bad Apple!! - Tohou Project</li>
-						<li>Tetris Theme (Korobeiniki)</li>
-					</ul>
-				</li>
-			</ul>
-		</article>
-
-
-*\
