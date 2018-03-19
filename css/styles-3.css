@@ -157,20 +157,20 @@ nav ul {
 
 /* Main */
 
-#home-parallax-image {
+#parallax-image {
 	border-left: 7px solid #00004d;
     background: url(../images/index-header.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    height: 80%;
+    height: 100%;
 }
 
 #placeholder-parallax-image {
     background: url("http://via.placeholder.com/1766x865");
     background-repeat: no-repeat;
-    height: 80%;
+    height: 100%;
 }
 
 #skip-parallax {
@@ -182,16 +182,17 @@ nav ul {
     border-top-right-radius: 50%;
     font-size: 50px;
     position: absolute;
-    top: 600px;
     left: 56.5%;
     color: black;
     text-decoration: none;
-    animation: magicfloat 2s infinite;
+    animation: magicfloat 4s infinite;
+    transition: 1s;
 }
 
 @keyframes magicfloat {
-    from{top:400px;}
-    to{top:450px;}
+    0% {top: 800px;}
+    50% {top: 780px;}
+    100% {top: 800px;}
 }
 
 #skip-parallax:active {
@@ -215,8 +216,8 @@ h1 {
 .alignment p {
     font-size: 25px;
     font-family: 'Lato', sans-serif;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 30px;
+    margin-right: 470px;
 }
 
 .resume-alignment p {
@@ -239,6 +240,13 @@ h1 {
     padding-bottom: 20px;
 }
 
+#index-photo {
+    margin-left: 450px;
+    border: #00004d 3px solid;
+    width: 300px;
+    height: 250px;
+}
+
 #resume ul {
     font-family: 'Lato', sans-serif;
     margin-top: 15px;
@@ -246,9 +254,13 @@ h1 {
     font-size: 25px;
 }
 
-form, .contact-alignment img {
+form {
     margin-left: 50px;
     font-size: 25px;
+}
+
+.contact-alignment img {
+    margin-left: 50px;
 }
 
 .vert-flex {
@@ -275,11 +287,13 @@ form, .contact-alignment img {
 
 #letter-of-rec-1 img {
     margin-top: 15px;
+    margin-left: 230px;
 }
 
-#letter-of-rec-1 img,
 #letter-of-rec-2 img {
-    margin-left: 300px;
+    margin-top: 15px;
+    height: 789px;
+    margin-left: 100px;
 }
 
 .resume-left-align {
@@ -300,7 +314,12 @@ form, .contact-alignment img {
 .resume-right-align {
     margin-bottom: 50px;
 }
-	
+
+#contact-p {
+    margin-right: 400px;
+    margin-left: 400px;
+}
+
 @media screen and (min-width: 481px) and (max-width: 1279px) {
 	
 	#main-parallax {
