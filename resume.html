@@ -121,12 +121,38 @@
             </section>
             <h2>Letters of Reccomendation:</h2>
             <div class="flex-it">
-                <section id="letter-of-rec-1">
-                    <img src="images/quiring-letter.jpg" alt="Letter of Reccomendation from Geoffrey Quiring.">
-                </section>
-                <section id="letter-of-rec-2">
-                    <img src="images/tackett-letter.jpg" alt="Letter of Reccomendation from Mark Tackett">
-                </section>
+				<div class="slideshow">
+					<div class="slideshow-imgs" style="max-width:100%">
+						<img class="mySlides" src="images/quiring-letter.jpg" style="width: 100%; display: block;" alt="Captain America pencil Drawing">
+						<img class="mySlides" src="images/tackett-letter.jpg" style="width: 100%; display: none;" alt="Black Widow stipppling">
+					</div>
+						<div class="slideshow-center">
+							<div class="slideshow-section">
+								<div class="slide-arrows">
+									<button class="w3-btn w3-hover-red w3-round w3-large w3-ripple" onclick="plusDivs(-1)">
+										<b>❮ Prev</b>
+									</button>
+								</div>
+								<div class="slide-arrows">
+									<button class="w3-btn w3-hover-red w3-round w3-large w3-ripple" onclick="plusDivs(1)">
+										<b>Next ❯</b>
+									</button>
+								</div>
+							</div>
+							<div class="slideshow-buttons">
+								<div class="slide-individual">
+									<button class="w3-btn demo w3-hover-red w3-round w3-ripple slide-red" onclick="currentDiv(1)">
+										<b>1</b>
+									</button>
+								</div>
+								<div class="slide-individual">
+									<button class="w3-btn demo w3-hover-red w3-round w3-ripple" onclick="currentDiv(2)">
+										<b>2</b>
+									</button>
+								</div>
+							</div>
+						</div>
+				</div>
             </div>
 	    </article>
 	</main>

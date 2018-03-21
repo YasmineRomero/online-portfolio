@@ -375,6 +375,50 @@ form {
     height: 100px;
 }
 
+
+/* SLIDESHOW */
+
+.mySlides {display:none}
+
+                .slideshow {
+                    font-family: 'Quicksand', sans-serif;
+                    max-width: 50%;
+                    padding-right: 25px;
+                    padding-left: 25px;
+                    padding-top: 40px;
+                    padding-bottom: 100px;
+                }
+                div.slideshow {
+                    max-width: 50%;
+                    overflow: scroll;
+                    overflow-x: hidden;
+                    overflow-y: hidden;
+                }
+                .slideshow-center {
+                    padding-top: 40px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                .slideshow-section {
+                    display: flex;
+                    justify-content: center;
+                }
+                .slideshow-buttons {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 20px;
+                }
+                .slide-individual {
+                    padding-left: 4px;
+                    padding-right: 4px;
+                }
+                .slide-arrows {
+                    padding-left: 4px;
+                    padding-right: 4px;
+                }
+
+
 @media screen and (min-width: 481px) and (max-width: 1279px) {
 	
 	#main-parallax {
