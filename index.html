@@ -6,7 +6,7 @@
  
     <title>Home</title>
    
-    <link rel="stylesheet" href="css/styles-4.css">
+    <link rel="stylesheet" href="css/styles-4.css"> 
     <script type="text/javascript" src="js/functionality.js"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
@@ -15,41 +15,35 @@
 </head>
 
 <body id="flex-all">
-    <aside id="bio">
-    <nav id="bio">	
-        <p class="name">Yasmine C. Romero</p>
-        <img id="profile-pic" src="images/profile-pic.JPG" alt="A photo of myself.">
-        <p class="bio-text">I am currently learning web programming at the Center for Advanced Research and Technology and a Junior in High School.</p>
-        <p class="bio-text">I am a self-taught musician and artist.</p>
-        <ul class="nav-buttons">
-            <li><a class="home" href="index.html">Home</a></li>
-            <li><a class="about-me" href="about-me.html">About Me</a></li>
-            <li><a class="resume" href="resume.html">Resume</a></li>
-            <li class="portfolio" onclick="showPortfolio()">Portfolio &#x25BC;
-               <div id="hide-portfolio">
-                    <ul>
-                        <li><a class="web-projects" href="web-projects.html">Web Projects</a></li>
-                        <li><a class="writing" href="writing.html">Writing</a></li>
-                    </ul>
-               </div>
-            </li>
-            <li><a class="contact" href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-   </aside>
-    <main>
-        <div id="parallax-image">
-            <a id="skip-parallax" href="#main-parallax">&#x25BC;</a>
-        </div>
+	<div id="bio">
+		<aside>
+			<nav>	
+				<p class="name">Yasmine C. Romero</p>
+				<img id="profile-pic" src="images/profile-pic.JPG" alt="A photo of myself.">
+				<ul class="nav-buttons">
+					<li><a class="home" href="index.html">Home</a></li>
+					<li><a class="about-me" href="about-me.html">About Me</a></li>
+					<li><a class="resume" href="resume.html">Resume</a></li>
+					<li class="portfolio" onclick="showPortfolio()">Portfolio &#x25BC;
+					   <div id="hide-portfolio">
+							<ul>
+								<li><a class="web-projects" href="web-projects.html">Web Projects</a></li>
+								<li><a class="writing" href="writing.html">Writing</a></li>
+							</ul>
+					   </div>
+					</li>
+					<li><a class="contact" href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</aside>
+	</div>
+	<main>
         <article>
             <div id="main-parallax" class="alignment">
                 <h1>Welcome</h1>
-                <br>
-                <br>
-                <div class="flex-it">
-                    <img src="/images/index-photo.jpeg" id="index-photo">
-                    <p class="p-indents">My name is Yasmine Romero (also called Yazzie), and I'm a high school student. I plan to start my web design career by getting a Computer Science degree at California State University, Fresno. Take a look at my portfolio and contact me if you want me to join your team!</p>
-                </div>
+                <br><br>
+                <img src="images/index-photo.jpeg" id="index-photo">
+                <p class="p-indents home-p">My name is Yasmine Romero (also called Yazzie), and I'm a high school student. I plan to start my web design career by getting a Computer Science degree at California State University, Fresno. Take a look at my portfolio and contact me if you want me to join your team!</p>
             </div>
         </article>
     </main>

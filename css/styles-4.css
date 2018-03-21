@@ -1,3 +1,4 @@
+/* OVERALL */
 * {
 	margin: 0;
 	padding: 0;
@@ -9,19 +10,34 @@ html {
 }
 
 body {
-    background: #1f1f91;
+    background: #9da0db;
 }
 
-#flex-all {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
+p {
+	font-size: 20px;
 }
 
-/* Bio Info */
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.p-indents {
+	text-indent: 1.2em;
+}
+
+/* BIO */
 
 #bio {
+	position: fixed;
 	background: #1f1f91;
+	height: 100%;
+	border-right: solid 7px #00004d;
 	max-width: 350px;
 	min-width: 350px;
 }
@@ -61,7 +77,6 @@ nav ul {
 .bio-text {
     font-family: 'Lato', sans-serif;
 	color: white;
-	font-size: 18px;
 	padding-bottom: 5px;
 	text-align: center;
     padding-left: 15px;
@@ -155,79 +170,20 @@ nav ul {
 }
 
 
-/* Main */
-
-#parallax-image {
-	border-left: 7px solid #00004d;
-    background: url(../images/index-header.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    height: 100%;
-}
-
-#placeholder-parallax-image {
-    background: url("http://via.placeholder.com/1766x865");
-    background-repeat: no-repeat;
-    height: 100%;
-}
-
-#skip-parallax {
-    background: rgba(0, 0, 77, 0.42);
-    padding: 10px 15px;
-    border-bottom-left-radius: 50%;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 50%;
-    font-size: 50px;
-    position: absolute;
-    left: 56.5%;
-    color: black;
-    text-decoration: none;
-    animation: magicfloat 4s infinite;
-    transition: 1s;
-}
-
-@keyframes magicfloat {
-    0% {top: 800px;}
-    50% {top: 780px;}
-    100% {top: 800px;}
-}
-
-#skip-parallax:active {
-    color: black;
-}
-
-h1, h2, h3 {
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    padding-top: 40px;
-}
-
-h1 {
-    font-size: 50px;
-}
-
-.p-indents {
-	text-indent: 1.2em;
-}
+/* HOME */
 
 .alignment p {
-    font-size: 25px;
     font-family: 'Lato', sans-serif;
     margin-left: 30px;
     margin-right: 470px;
 }
 
 .resume-alignment p {
-    font-size: 25px;
     font-family: 'Lato', sans-serif;
     margin-left: 20px;
 }
 
 .contact-alignment p {
-    font-size: 25px;
     font-family: 'Lato', sans-serif;
     margin-left: 50px;
     margin-right: 100px;
@@ -235,28 +191,31 @@ h1 {
 
 #main-parallax {
 	border-top: 7px solid #00004d;
-	border-left: 7px solid #00004d;
     background: #9da0db;
     padding-bottom: 20px;
+	margin-left: 357px;
 }
 
 #index-photo {
-    margin-left: 450px;
+    margin-left: 630px;
     border: #00004d 3px solid;
     width: 300px;
     height: 250px;
+}
+
+.home-p {
+	text-align: center;
 }
 
 #resume ul {
     font-family: 'Lato', sans-serif;
     margin-top: 15px;
     margin-left: 20px;
-    font-size: 25px;
 }
 
 form {
     margin-left: 370px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #submit {
@@ -301,7 +260,7 @@ form {
 #resume ul li {
     font-family: 'Lato', sans-serif;
     margin-left: 50px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .flex-it {
@@ -378,51 +337,60 @@ form {
 
 /* SLIDESHOW */
 
-.mySlides {display:none}
+.mySlides {
+	display: none;
+	height: 792px;
+}
 
-                .slideshow {
-                    font-family: 'Quicksand', sans-serif;
-                    max-width: 50%;
-                    padding-right: 25px;
-                    padding-left: 25px;
-                    padding-top: 40px;
-                    padding-bottom: 100px;
-                }
-                div.slideshow {
-                    max-width: 50%;
-                    overflow: scroll;
-                    overflow-x: hidden;
-                    overflow-y: hidden;
-                }
-                .slideshow-center {
-                    padding-top: 40px;
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                }
-                .slideshow-section {
-                    display: flex;
-                    justify-content: center;
-                }
-                .slideshow-buttons {
-                    display: flex;
-                    justify-content: center;
-                    padding-top: 20px;
-                }
-                .slide-individual {
-                    padding-left: 4px;
-                    padding-right: 4px;
-                }
-                .slide-arrows {
-                    padding-left: 4px;
-                    padding-right: 4px;
-                }
+.slideshow {
+	font-family: 'Quicksand', sans-serif;
+	margin-left: 200px;
+    padding-left: 25px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+div.slideshow {
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.slideshow-center {
+	padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slideshow-section {
+    display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.slideshow-buttons {
+    display: flex;
+    justify-content: center;
+	padding-top: 20px;
+}
+
+.slide-individual {
+	padding-left: 4px;
+    padding-right: 4px;
+}
+
+.slide-arrows {
+    padding-left: 4px;
+	padding-right: 4px;
+}
 
 
 @media screen and (min-width: 481px) and (max-width: 1279px) {
 	
 	#main-parallax {
         background: #dfe0f7;
+		margin-left: 257px;
     }
     
     #bio, nav {
@@ -439,6 +407,8 @@ form {
 	
 	#main-parallax {
         background: white;
+		margin-left: 0px;
+		
     }
     
     #bio, nav {
