@@ -15,28 +15,26 @@
 </head>
 
 <body id="flex-all">
-	<div id="bio-static">
-		<aside id="bio">
-			<nav>	
-				<p class="name">Yasmine C. Romero</p>
-				<img id="profile-pic" src="images/profile-pic.JPG" alt="A photo of myself.">
-				<ul class="nav-buttons">
-					<li><a class="home" href="index.html">Home</a></li>
-					<li><a class="about-me" href="about-me.html">About Me</a></li>
-					<li><a class="resume" href="resume.html">Resume</a></li>
-					<li class="portfolio" onclick="showPortfolio()">Portfolio &#x25BC;
-					   <div id="hide-portfolio">
-							<ul>
-								<li><a class="web-projects" href="web-projects.html">Web Projects</a></li>
-								<li><a class="writing" href="writing.html">Writing</a></li>
-							</ul>
-					   </div>
-					</li>
-					<li><a class="contact" href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</aside>
-	</div>
+    <aside id="bio">
+        <nav>	
+            <p class="name">Yasmine C. Romero</p>
+            <img id="profile-pic" src="images/profile-pic.JPG" alt="A photo of myself.">
+            <ul class="nav-buttons">
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><a class="about-me" href="about-me.html">About Me</a></li>
+                <li><a class="resume" href="resume.html">Resume</a></li>
+                <li class="portfolio" onclick="showPortfolio()">Portfolio &#x25BC;
+                    <div id="hide-portfolio">
+                        <ul>
+                            <li><a class="web-projects" href="web-projects.html">Web Projects</a></li>
+                            <li><a class="writing" href="writing.html">Writing</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="contact" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
 	<main>
 	    <article id="main-parallax" class="contact-alignment">
             <h1>Contact</h1>
@@ -50,22 +48,22 @@
                         <a href="https://www.linkedin.com/in/yasmine-romero-045a46149/"><img src="images/linkedin.png" alt="LinkedIn's logo." id="linkedin"></a>
                     </div>
                     <p class="p-indents" id="contact-p">If you would like me to contact you, please put in your contact information in the fields below. Be sure to put in a valid e-mail. I will get back to you as soon as I can</p>
+                <br><br><br>
+                <form>
+                    <label for="email" id="email">Email: * </label>
+                        <input type="e-mail" id="email-function">
+                    <label for="phone" id="phone">Phone Number: </label>
+                        <input type="tel" id="phone-function">
+                        <br>
+                        <br>
+                    <label for="comments" id="comments">Comments: </label>
+                        <textarea cols="30" rows="10" id="comments-function"></textarea>
+                        <br><br>
+                    <input type="submit" id="submit" onclick="validateEmail()">
+                    <input type="reset" id="reset">
+                </form>
                 </div>
             </div>
-	        <br><br><br>
-	        <form>
-                <label for="email" id="email">Email: * </label>
-	                <input type="e-mail" id="email-function">
-	            <label for="phone" id="phone">Phone Number: </label>
-	                <input type="tel" id="phone-function">
-	                <br>
-	                <br>
-	            <label for="comments" id="comments">Comments: </label>
-	                <textarea cols="30" rows="10" id="comments-function"></textarea>
-	                <br><br>
-	            <input type="submit" id="submit" onclick="validateEmail()">
-	            <input type="reset" id="reset">
-	        </form>
 	    </article>
 	</main>
 </body>
