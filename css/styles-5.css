@@ -255,14 +255,31 @@ nav ul {
 
 /* WEB PROJECTS */
 
+.web-proj {
+    font-family: 'Lato', sans-serif;
+    max-width: 850px;
+    min-width: 850px;
+    margin-left: 20%;
+}
+
 #site1 {
-	width: 50%;
-	height: 50%;
+	width: 100%;
+	height: 100%;
+}
+
+#zg-banner {
+    width: 100%;
+    height: 30%;
 }
 
 #site2 {
-	width: 50%;
-	height: 50%;
+	width: 100%;
+    height: 70%;
+}
+
+#git {
+    width: 100%;
+    height: 100%;
 }
 
 /* WRITING */
@@ -294,18 +311,18 @@ nav ul {
 }
 
 #essay1 {
-	width: 480px;
-	height: 272.5px;
+	width: 60%;
+    height: 60%;
 }
 
 #essay2 {
-	width: 530px;
-	height: 244.16px;
+	width: 60%;
+    height: 60%;
 }
 
 #essay3 {
-	width: 532.5px;
-	height: 252.5px;
+	width: 60%;
+    height: 60%;
 }
 
 /* CONTACT */
