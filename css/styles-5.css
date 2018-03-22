@@ -20,6 +20,8 @@
 
             h1 {
                 font-size: 50px;
+				margin-bottom: 15px;
+				text-decoration: underline;
             }
 
             .p-indents {
@@ -178,13 +180,13 @@ nav ul {
 
 /* HOME */
 
-
 #home-parallax {
+	background: 389.4px;
     background-image: url(../images/index-photo.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
+    background-size: cover;
+	padding: 25%;
 }
 
 .alignment p {
@@ -251,23 +253,59 @@ nav ul {
 
 }
 
-/* WRITING */
+/* WEB PROJECTS */
 
-.writing-alignment p {
-    margin-left: 20px;
+#site1 {
+	width: 50%;
+	height: 50%;
 }
 
-.essay-chunk {
-    margin-left: 30px;
+#site2 {
+	width: 50%;
+	height: 50%;
+}
+
+/* WRITING */
+
+.writing-alignment {
+    font-family: 'Lato', sans-serif;
+    margin-left: 300px;
+    max-width: 850px;
+    min-width: 850px;
+}
+
+.essay-left {
+	text-align: center;
+    max-width: 500px;
+    min-width: 500px;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+.essay-right {
+    margin-right: 20px;
+	text-align: center;
+    max-width: 500px;
+    min-width: 500px;
 }
 
 .essay-chunk img {
     border: solid 8px;
 }
 
-.essay {
-    max-width: 600px;
-    min-width: 600px;
+#essay1 {
+	width: 480px;
+	height: 272.5px;
+}
+
+#essay2 {
+	width: 530px;
+	height: 244.16px;
+}
+
+#essay3 {
+	width: 532.5px;
+	height: 252.5px;
 }
 
 /* CONTACT */
@@ -275,6 +313,7 @@ nav ul {
 #contact-p {
     max-width: 850px;
     min-width: 850px;
+	text-align: center;
 }
 
 .contact-alignment p {
@@ -283,7 +322,7 @@ nav ul {
 }
 
 form {
-    margin-left: 370px;
+    margin-left: 420px;
     font-size: 20px;
 }
 
@@ -391,11 +430,6 @@ div.slideshow {
         background: #dfe0f7;
     }
     
-    #bio, nav {
-	    max-width: 250px;
-	    min-width: 250px;
-    }
-    
     #profile-pic {
         margin-left: 50px;
     }
@@ -405,13 +439,7 @@ div.slideshow {
 	
 	#main-parallax {
         background: #2d7723;
-		margin-left: 0px;
 		
-    }
-    
-    #bio, nav {
-	    max-width: 150px;
-	    min-width: 150px;
     }
     
     #profile-pic {
