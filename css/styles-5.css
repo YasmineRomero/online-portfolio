@@ -192,10 +192,8 @@ nav ul {
 
 .home-p {
     font-family: 'Lato', sans-serif;
-    margin-left: 200px;
-	text-align: center;
-    margin-top: 30px;
-    padding-right: 60px;
+    margin-left: 21.5%;
+    margin-top: 10px;
     max-width: 900px;
     min-width: 800px;
 }
@@ -204,7 +202,7 @@ nav ul {
 
 .about-me-alignment {
     font-family: 'Lato', sans-serif;
-    margin-left: 10%;
+    margin-left: 20%;
     max-width: 1100px;
     min-width: 1100px;
 }
@@ -214,7 +212,7 @@ nav ul {
 
 .resume-alignment p {
     font-family: 'Lato', sans-serif;
-    margin-left: 20p
+    margin-left: 20px;
 }
 
 .resume-left-align,
@@ -429,7 +427,6 @@ form {
             }
 
             .slideshow {
-                font-family: 'Quicksand', sans-serif;
                 margin-left: 450px;
                 padding-left: 25px;
                 margin-top: 40px;
@@ -474,13 +471,30 @@ form {
 /* FOOTER */
 
 footer {
+	border-top: 5px solid black;
     background: #9f9f9f;
     color: #343434;
-    text-align: center;
+    padding-left: 50%;
+	padding-top: 10px;
+	padding-bottom: 15px;
 }
 
 #f-nav-buttons {
-    
+    font-family: 'Lato', sans-serif;
+	line-height: 35px;
+}
+
+#f-nav-buttons li {
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#f-nav-buttons a {
+	color: #343434;
+}
+
+#f-nav-buttons a:visited {
+	color: #dddddd;
 }
 
 #f-home {
@@ -492,10 +506,6 @@ footer {
 }
 
 #f-resume {
-    
-}
-
-#f-portfolio {
     
 }
 
