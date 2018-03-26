@@ -3,11 +3,13 @@
 var c = false;
 
 function showPortfolio() {
+	var b = document.getElementById('hide-portfolio');
+	var d = document.getElementsByClassName('portfolio');
     if (c) {
-        document.getElementById('hide-portfolio').style.display = "none";
+        b.style.display = "none";
         c = false;
     } else {
-        document.getElementById('hide-portfolio').style.display = "block";
+        b.style.display = "block";
         c = true;
     }
 
@@ -46,9 +48,5 @@ function showDivs(n) {
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";  
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("slide-red", "");
-    }
-    x[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += "slide-red";
+    x[slideIndex-1].style.display = "block";
 }
