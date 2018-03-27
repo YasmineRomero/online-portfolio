@@ -15,10 +15,21 @@ function showPortfolio() {
 
 }
 
-// Form Validation (work on l8r) \\
+// Form Validation \\
 
-function validateEmail() {
-    var email = document.forms[0][0].value;
+function validatePhone() {
+
+	var ph = document.forms[0].phoneNumber.value;
+	
+	if (ph.length < 10) {
+		alert("Please put in your full phone number.");
+		return false;
+	}
+	
+	else if (isNaN(ph)) {
+		alert("Please put in only numbers.");
+		return false;
+	}
 }
 
 // Slideshow \\
