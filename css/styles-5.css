@@ -198,6 +198,7 @@ nav ul {
 .home-p {
     font-family: 'Lato', sans-serif;
     margin-top: 10px;
+    text-align: center;
 }
 
 .home-alignment section {
@@ -210,9 +211,30 @@ nav ul {
 
 .about-me-alignment {
     font-family: 'Lato', sans-serif;
-    margin-left: 20%;
-    max-width: 1100px;
-    min-width: 1100px;
+}
+
+.about-me-alignment section {
+    margin-left: 15vw;
+    max-width: 50vw;
+    min-width: 50vw;
+    text-align: center;
+}
+
+.about-me-alignment section div div img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-flex-it {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+    
+#about-me-main-photo {
+    width: 40%;
+    height: 40%;
+    margin-left: 15vw;
 }
 
 
@@ -279,10 +301,10 @@ nav ul {
     margin-left: 15vw;
     min-width: 50vw;
     max-width: 50vw;
+    text-align: center;
 }
 
 .web-chunk {
-    background: #9f9f9f;
     padding-right: 25px;
     padding-bottom: 20px;
     padding-left: 20px;
@@ -335,7 +357,6 @@ nav ul {
 }
 
 .essay-chunk {
-    background: #9f9f9f;
     padding-right: 25px;
     padding-bottom: 20px;
 }
@@ -346,18 +367,7 @@ nav ul {
 
 .essay-chunk p {
     margin-top: 2vh;
-}
-
-.essay-left {
-	text-align: center;
-	margin-top: 30px;
-    padding-left: 10px;
-}
-
-.essay-right {
-	text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    text-align: center;
 }
 
 #essay1 {
@@ -373,48 +383,21 @@ nav ul {
 /* CONTACT */
 
 #contact-p {
-    max-width: 850px;
-    min-width: 850px;
 	text-align: center;
 }
 
-.contact-alignment p {
+.contact-alignment section {
+    margin-left: 15vw;
+    min-width: 50vw;
+    max-width: 50vw;
+}
+
+.contact-alignment section p {
     font-family: 'Lato', sans-serif;
-    margin-left: 370px;
-}
-
-form {
-    margin-left: 420px;
-    font-size: 20px;
-}
-
-#submit {
-    margin-left: 250px;
-}
-
-#submit, #reset {
-    padding: 10px;
-    font-size: 20px;
-}
-
-#reset {
-    margin-left: 120px;
-}
-
-#phone {
-    margin-left: 40px;
-}
-
-#email-function, #phone-function, #comments-function {
-    font-size: 20px;
-}
-
-#comments {
-    margin-left: 100px;
 }
 
 .contact-alignment img {
-    margin-left: 50px;
+    margin-left: 4vw;
 }
 
 #twitter, #linkedin {
@@ -427,11 +410,58 @@ form {
     border-top-right-radius: 10%;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
-    margin-left: 650px;
+    margin-left: 18vw;
 }
 
 #linkedin {
     height: 100px;
+}
+
+form {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+#email {
+    margin-left: 23vw;
+}
+
+#email-function {
+    margin-left: 18.8vw;
+}
+
+#phone {
+    margin-left: 21vw;
+}
+
+#phone-function {
+    margin-left: 19vw;
+}
+
+#email-function, #phone-function, #comments-function {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+#comments {
+    margin-left: 22.5vw;
+}
+
+#comments-function {
+    margin-left: 17vw;
+}
+
+#submit {
+    margin-left: 18.5vw;
+}
+
+#reset {
+    margin-left: 5vw;
+}
+
+#submit, #reset {
+    padding: 10px;
+    font-size: 20px;
 }
 
 
@@ -536,7 +566,7 @@ footer {
 @media screen and (min-width: 481px) and (max-width: 1279px) {
 	
 	#main-parallax {
-        background: #dfe0f7;
+        width: 66vw;
     }
     
 	.name {
@@ -544,40 +574,238 @@ footer {
 	}
     
     #bio {
-        width: 17vw;
+        width: 34vw;
     }
 	
     #profile-pic {
-		width: 100%;
+		width: 120px;
+    }
+    
+    /* **  Home ** */
+    
+    #home-parallax {
+        background: 30vw;
+        background-image: url(../images/index-photo.jpeg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+    }
+
+    .home-alignment section {
+        margin-left: 9vw;
+        min-width: 50vw;
+        max-width: 50vw;
+    }
+    
+    /* **  About Me ** */
+    
+    .about-me-alignment {
+        font-family: 'Lato', sans-serif;
+    }
+
+    .about-me-alignment section {
+        margin-left: 9vw;
+        max-width: 50vw;
+        min-width: 50vw;
+    }
+
+    .about-me-alignment section div div img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #about-me-main-photo {
+        min-width: 40%;
+        max-width: 40%;
+        min-height: 40%;
+        max-height: 40%;
+        margin-left: 15vw;
+    }
+    
+    /* **  Web Projects ** */
+    
+    .web-project-alignment {
+        font-family: 'Lato', sans-serif;
+    }
+
+    .web-project-alignment section {
+        margin-left: 9vw;
+        min-width: 50vw;
+        max-width: 50vw;
+    }
+
+    .about-flex-it {
+        flex-direction: column;
+    }
+
+    .web-chunk h3 {
+        margin-bottom: 20px;
+    }
+
+    .web-chunk img {
+        margin-bottom: 20px;
+        border: solid 4px;
+    }
+
+    #site1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #zg-banner {
+        width: 100%;
+        height: 30%;
+    }
+
+    #site2 {
+        width: 100%;
+        height: 70%;
+    }
+
+    #git {
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* ** Writing ** */
+    
+    .writing-alignment {
+        font-family: 'Lato', sans-serif;
+    }
+
+    .writing-alignment section {
+        margin-left: 9vw;
+        min-width: 50vw;
+        max-width: 50vw;
+    }
+
+    .writing-alignment section .essay-chunk img {
+        border: solid black 4px;
+        margin-left: 0vw;
+    }
+
+    .essay-chunk {
+        padding-right: 25px;
+        padding-bottom: 20px;
+    }
+
+    .essay-chunk h2 {
+        margin-bottom: 20px;
+    }
+
+    .essay-chunk p {
+        margin-top: 2vh;
+    }
+
+    .essay-left {
+        text-align: center;
+    }
+
+    .essay-right {
+        text-align: center;
+    }
+
+    #essay1,
+    #essay2 {
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* ** Contact ** */
+
+    #contact-p {
+        text-align: center;
+        min-width: 50vw;
+        max-width: 50vw;
+    }
+
+    .contact-alignment section {
+        margin-left: 9vw;
+    }
+
+    .contact-alignment section p {
+        font-family: 'Lato', sans-serif;
+    }
+
+    .contact-alignment img {
+        margin-left: 4vw;
+    }
+
+    #twitter, #linkedin {
+        margin-top: 15px;
+    }
+
+    #twitter {
+        height: 100px;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        margin-left: 3vw;
+    }
+
+    #linkedin {
+        height: 100px;
+    }
+
+    form {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+    }
+
+    #email {
+        margin-left: 17vw;
+    }
+
+    #email-function {
+        margin-left: 17vw;
+    }
+
+    #phone {
+        margin-left: 17vw;
+    }
+
+    #phone-function {
+        margin-left: 17vw;
+    }
+
+    #email-function, #phone-function, #comments-function {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+    }
+
+    #comments {
+        margin-left: 17vw;
+    }
+
+    #comments-function {
+        margin-left: 17vw;
+    }
+
+    #submit {
+        margin-left: 17vw;
+    }
+
+    #reset {
+        margin-left: 5vw;
+    }
+
+    #submit, #reset {
+        padding: 10px;
+        font-size: 20px;
     }
 }
 
 @media screen and (max-width: 480px) {
 	
 	#main-parallax {
-        background: #2d7723;
         width: 100%;
     }
 	
 	#flex-all {
 		display: flex;
 		flex-direction: column;
-	}
-	
-	.home-p {
-		margin-left: 0%;
-		min-width: 94%;
-		max-width: 94%;
-		padding-left: 10px;
-	}
-	
-	#home-parallax {
-        background: 0vw;
-		background-size: cover;
-		background-image: url(../images/index-photo.jpeg);
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		height: 30vh;
 	}
 	
 	#bio {
@@ -603,62 +831,171 @@ footer {
     .flex-it {
         flex-direction: column;
     }
+    
+    /* **  Home ** */
+    
+    .home-alignment section {
+        margin-left: 0vw;
+        min-width: 95vw;
+        max-width: 95vw;
+    }
+    
+    .home-p {
+        padding-right: 25px;
+        padding-left: 20px;
+    }
 	
-	.web-proj {
-		font-family: 'Lato', sans-serif;
-		max-width: 100%;
-		min-width: 100%;
-		margin-left: 0%;
+	#home-parallax {
+        background: 0vw;
+		background-size: cover;
+		background-image: url(../images/index-photo.jpeg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		height: 30vh;
 	}
-	
+    
+	/* **  Web Projects ** */
+    
+    .web-project-alignment {
+        font-family: 'Lato', sans-serif;
+    }
+
+    .web-project-alignment section {
+        margin-left: 0vw;
+        min-width: 95vw;
+        max-width: 95vw;
+    }
+
+    .web-chunk img {
+        margin-bottom: 10px;
+        border: none;
+    }
+
+    #site1,
+    #zg-banner,
+    #site2,
+    #git {
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* ** Writing ** */
+    
     .writing-alignment {
         font-family: 'Lato', sans-serif;
     }
 
     .writing-alignment section {
         margin-left: 0vw;
-        min-width: 100%;
-        max-width: 100%;
+        min-width: 95vw;
+        max-width: 95vw;
     }
 
     .writing-alignment section .essay-chunk img {
         border: solid black 4px;
-        margin-left: 25vw;
-    }
-
-    .essay-chunk {
-        background: #9f9f9f;
-        padding-right: 25px;
-        padding-bottom: 20px;
+        margin-left: 2vw;
     }
 
     .essay-chunk h2 {
-        margin-bottom: 20px;
+        margin-left: 2vw;
     }
 
     .essay-chunk p {
         margin-top: 2vh;
-    }
-
-    .essay-left {
-        text-align: center;
-        margin-top: 30px;
         padding-left: 10px;
     }
 
-    .essay-right {
-        text-align: center;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    #essay1 {
-        width: 40%;
-        height: 40%;
-    }
-
+    #essay1,
     #essay2 {
-        width: 40%;
-        height: 40%;
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* ** Contact ** */
+
+    #contact-p {
+        text-align: center;
+        min-width: 90vw;
+        max-width: 90vw;
+    }
+
+    .contact-alignment section {
+        margin-left: 0vw;
+        min-width: 90vw;
+        max-width: 90vw;
+    }
+
+    .contact-alignment section p {
+        font-family: 'Lato', sans-serif;
+        padding-right: 1vw;
+        padding-left: 1vw;
+    }
+
+    .contact-alignment img {
+        margin-left: 30vw;
+    }
+
+    #twitter, #linkedin {
+        margin-top: 17vwpx;
+    }
+
+    #twitter {
+        height: 100px;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        margin-left: 30vw;
+    }
+
+    #linkedin {
+        height: 100px;
+    }
+
+    form {
+        font-family: 'Lato', sans-serif;
+        font-size: 17px;
+    }
+
+    #email {
+        margin-left: 17vw;
+    }
+
+    #email-function {
+        margin-left: 17vw;
+    }
+
+    #phone {
+        margin-left: 17vw;
+    }
+
+    #phone-function {
+        margin-left: 17vw;
+    }
+
+    #email-function, #phone-function, #comments-function {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+    }
+
+    #comments {
+        margin-left: 17vw;
+    }
+
+    #comments-function {
+        margin-left: 17vw;
+    }
+
+    #submit {
+        margin-left: 17vw;
+    }
+
+    #reset {
+        margin-left: 12vw;
+    }
+
+    #submit, #reset {
+        padding: 10px;
+        font-size: 20px;
     }
 }
