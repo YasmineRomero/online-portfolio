@@ -32,7 +32,7 @@ function validatePhone() {
 	}
 }
 
-// Slideshow \\
+// Slideshow - Portfolio Sections \\
 
 var slideNumber = 1;
 displaySlide(slideNumber);
@@ -40,13 +40,14 @@ displaySlide(slideNumber);
 function variableAdd(n) {
     displaySlide(slideNumber += n);
 }
- function currentDiv(n) {
+
+ function currentSlide(n) {
     displaySlide(slideNumber = n);
 }
 
 function displaySlide(n) {
     var i;
-    var x = document.getElementsByClassName("resumes");
+    var x = document.getElementsByClassName("letters");
     
     if (n > x.length) {
         slideNumber = 1;
@@ -58,4 +59,33 @@ function displaySlide(n) {
         x[i].style.display = "none";  
     }
     x[slideNumber-1].style.display = "block";
+}
+
+// Slideshow - Letters of Reccomendation \\
+
+var lettersSlideNumber = 1;
+displaySlide(lettersSlideNumber);
+
+function lettersVariableAdd(n) {
+    displaySlide(lettersSlideNumber += n);
+}
+
+ function letterCurrentSlide(n) {
+    displaySlide(lettersSlideNumber = n);
+}
+
+function displaySlide(n) {
+    var i;
+    var x = document.getElementsByClassName("letters");
+    
+    if (n > x.length) {
+        lettersSlideNumber = 1;
+    }    
+    if (n < 1) {
+        lettersSlideNumber = x.length;
+    }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    x[lettersSlideNumber-1].style.display = "block";
 }
