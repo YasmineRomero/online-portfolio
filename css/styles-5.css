@@ -188,11 +188,12 @@ nav ul {
 
 #home-parallax {
 	background: 13vw;
-    background-image: url(../images/index-photo.jpeg);
+    background-image: url(../images/index-photo.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 	height: 80vh;
+    filter: grayscale(50%);
 }
 
 .home-p {
@@ -217,26 +218,18 @@ nav ul {
     margin-left: 15vw;
     max-width: 50vw;
     min-width: 50vw;
-    text-align: center;
 }
 
-.about-me-alignment section div div img {
-    width: 100%;
+.about-me-alignment section img {
+    width: 550px;
     height: 100%;
+    margin-top: 2vh;
+    margin-left: 11vw;
 }
 
-.about-flex-it {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
+.about-chunks {
+    margin-top: 2vh;
 }
-    
-#about-me-main-photo {
-    width: 40%;
-    height: 40%;
-    margin-left: 15vw;
-}
-
 
 /* RESUME */
 
@@ -253,7 +246,6 @@ nav ul {
 #resume ul {
     font-family: 'Lato', sans-serif;
     margin-top: 15px;
-    margin-left: 20px;
 }
 
 #resume {
@@ -267,7 +259,7 @@ nav ul {
 }
 
 #resume ul li {
-	margin-left: 15%;
+	margin-left: 2vw;
 }
 
 #letter-of-rec-1 img {
@@ -423,19 +415,19 @@ form {
 }
 
 #email {
-    margin-left: 23vw;
+    margin-left: 20vw;
 }
 
 #email-function {
-    margin-left: 18.8vw;
+    margin-left: 20vw;
 }
 
 #phone {
-    margin-left: 21vw;
+    margin-left: 20vw;
 }
 
 #phone-function {
-    margin-left: 19vw;
+    margin-left: 20vw;
 }
 
 #email-function, #phone-function, #comments-function {
@@ -444,15 +436,15 @@ form {
 }
 
 #comments {
-    margin-left: 22.5vw;
+    margin-left: 20vw;
 }
 
 #comments-function {
-    margin-left: 17vw;
+    margin-left: 20vw;
 }
 
 #submit {
-    margin-left: 18.5vw;
+    margin-left: 20vw;
 }
 
 #reset {
@@ -467,47 +459,40 @@ form {
 
             /* SLIDESHOW */
 
-            .mySlides {
+            .resumes {
                 display: none;
 				height: 792px;
             }
 
-            .slideshow {
-                margin-left: 23.25%;
-                margin-top: 40px;
+            .resumes-container {
+                margin-left: 27vw;
+                margin-top: 5vh;
                 margin-bottom: 10px;
                 overflow: scroll;
                 overflow-x: hidden;
                 overflow-y: hidden;
             }
 
-            .slideshow-center {
-                padding-top: 40px;
+            .back-and-next {
                 display: flex;
                 justify-content: center;
-                flex-direction: column;
+                flex-direction: row;
             }
 
-            .slideshow-section {
-                display: flex;
-                justify-content: center;
-                margin-top: 10px;
+            .back-and-next button {
+                font-family: 'Lato', sans-serif;
+                font-size: 20px;
+                padding: 10px;
+                border-bottom-right-radius: 50%;
+                border-bottom-left-radius: 50%;
+                border-top-right-radius: 50%;
+                border-top-left-radius: 50%;
             }
 
-            .slideshow-buttons {
-                display: flex;
-                justify-content: center;
-                padding-top: 20px;
-            }
-
-			.back-button {
+			.back {
+                font-family: 'Lato', sans-serif;
 				margin-right: 100px;
 			}
-
-            .slide-individual {
-                padding-left: 4px;
-                padding-right: 4px;
-            }
 
 /* FOOTER */
 
@@ -610,17 +595,11 @@ footer {
         min-width: 50vw;
     }
 
-    .about-me-alignment section div div img {
-        width: 100%;
+    .about-me-alignment section img {
+        width: 250px;
         height: 100%;
-    }
-    
-    #about-me-main-photo {
-        min-width: 40%;
-        max-width: 40%;
-        min-height: 40%;
-        max-height: 40%;
-        margin-left: 15vw;
+        margin-top: 4vh;
+        margin-left: 4vw;
     }
     
     /* **  Web Projects ** */
@@ -633,10 +612,6 @@ footer {
         margin-left: 9vw;
         min-width: 50vw;
         max-width: 50vw;
-    }
-
-    .about-flex-it {
-        flex-direction: column;
     }
 
     .web-chunk h3 {
@@ -755,19 +730,19 @@ footer {
     }
 
     #email {
-        margin-left: 17vw;
+        margin-left: 5vw;
     }
 
     #email-function {
-        margin-left: 17vw;
+        margin-left: 5vw;
     }
 
     #phone {
-        margin-left: 17vw;
+        margin-left: 5vw;
     }
 
     #phone-function {
-        margin-left: 17vw;
+        margin-left: 5vw;
     }
 
     #email-function, #phone-function, #comments-function {
@@ -776,15 +751,15 @@ footer {
     }
 
     #comments {
-        margin-left: 17vw;
+        margin-left: 5vw;
     }
 
     #comments-function {
-        margin-left: 17vw;
+        margin-left: 5vw;
     }
 
     #submit {
-        margin-left: 17vw;
+        margin-left: 5vw;
     }
 
     #reset {
@@ -853,6 +828,27 @@ footer {
 		background-repeat: no-repeat;
 		height: 30vh;
 	}
+    
+    /* ** About Me ** */
+
+    .about-me-alignment section img {
+        width: 200px;
+        height: 100%;
+        margin-top: 2vh;
+        margin-left: 10vw;
+    }
+
+    .about-me-alignment section {
+        margin-left: 0vw;
+        min-width: 90vw;
+        max-width: 90vw;
+    }
+
+    .about-chunks {
+        margin-top: 2vh;
+        padding-right: 3vw;
+        padding-left: 3vw;
+    }
     
 	/* **  Web Projects ** */
     
@@ -958,19 +954,19 @@ footer {
     }
 
     #email {
-        margin-left: 17vw;
+        margin-left: 9vw;
     }
 
     #email-function {
-        margin-left: 17vw;
+        margin-left: 9vw;
     }
 
     #phone {
-        margin-left: 17vw;
+        margin-left: 9vw;
     }
 
     #phone-function {
-        margin-left: 17vw;
+        margin-left: 9vw;
     }
 
     #email-function, #phone-function, #comments-function {
@@ -979,15 +975,15 @@ footer {
     }
 
     #comments {
-        margin-left: 17vw;
+        margin-left: 9vw;
     }
 
     #comments-function {
-        margin-left: 17vw;
+        margin-left: 9vw;
     }
 
     #submit {
-        margin-left: 17vw;
+        margin-left: 13vw;
     }
 
     #reset {

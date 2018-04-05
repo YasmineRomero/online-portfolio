@@ -34,30 +34,28 @@ function validatePhone() {
 
 // Slideshow \\
 
-var slideIndex = 1;
-showDivs(slideIndex);
+var slideNumber = 1;
+displaySlide(slideNumber);
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
+function variableAdd(n) {
+    displaySlide(slideNumber += n);
 }
-
  function currentDiv(n) {
-    showDivs(slideIndex = n);
+    displaySlide(slideNumber = n);
 }
 
-function showDivs(n) {
+function displaySlide(n) {
     var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
+    var x = document.getElementsByClassName("resumes");
     
     if (n > x.length) {
-        slideIndex = 1;
+        slideNumber = 1;
     }    
     if (n < 1) {
-        slideIndex = x.length;
+        slideNumber = x.length;
     }
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";  
     }
-    x[slideIndex-1].style.display = "block";
+    x[slideNumber-1].style.display = "block";
 }
