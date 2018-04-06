@@ -4,7 +4,6 @@ var c = false;
 
 function showPortfolio() {
 	var b = document.getElementById('hide-portfolio');
-	var d = document.getElementsByClassName('portfolio');
     if (c) {
         b.style.display = "none";
         c = false;
@@ -23,31 +22,28 @@ function validatePhone() {
 	
 	if (ph.length < 10) {
 		alert("Please put in your full phone number.");
-		return false;
 	}
-	
-	else if (isNaN(ph)) {
-		alert("Please put in only numbers.");
-		return false;
-	}
+    
+    else if (ph.length > 10) {
+        alert("Please put in a valid phone number.");
+    }
 }
 
-// Slideshow - Portfolio Sections \\
+// Slideshow - Resume Sections \\
 
 var slideNumber = 1;
-displaySlide(slideNumber);
 
-function variableAdd(n) {
-    displaySlide(slideNumber += n);
+function resumeVariableAdd(n) {
+    resumeDisplaySlide(slideNumber += n);
 }
 
  function currentSlide(n) {
-    displaySlide(slideNumber = n);
+    resumeDisplaySlide(slideNumber = n);
 }
 
-function displaySlide(n) {
+function resumeDisplaySlide(n) {
     var i;
-    var x = document.getElementsByClassName("letters");
+    var x = document.getElementsByClassName("resume-section");
     
     if (n > x.length) {
         slideNumber = 1;
@@ -64,24 +60,23 @@ function displaySlide(n) {
 // Slideshow - Letters of Reccomendation \\
 
 var lettersSlideNumber = 1;
-displaySlide(lettersSlideNumber);
 
-function lettersVariableAdd(n) {
-    displaySlide(lettersSlideNumber += n);
+function letterVariableAdd(a) {
+    letterDisplaySlide(lettersSlideNumber += a);
 }
 
- function letterCurrentSlide(n) {
-    displaySlide(lettersSlideNumber = n);
+ function letterCurrentSlide(a) {
+    letterDisplaySlide(lettersSlideNumber = a);
 }
 
-function displaySlide(n) {
+function letterDisplaySlide(a) {
     var i;
     var x = document.getElementsByClassName("letters");
     
-    if (n > x.length) {
+    if (a > x.length) {
         lettersSlideNumber = 1;
     }    
-    if (n < 1) {
+    if (a < 1) {
         lettersSlideNumber = x.length;
     }
     for (i = 0; i < x.length; i++) {
