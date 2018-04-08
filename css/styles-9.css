@@ -430,9 +430,8 @@ form {
 
                         .resume-section {
                             display: none;
-                            height: 48vh;
-                            background: #bfbfbf;
                             width: 40vw;
+                            background: #bfbfbf;
                             padding: 12px;
                             border: solid black 3px;
                         }
@@ -815,7 +814,6 @@ footer {
 
                         .resume-section {
                             display: none;
-                            height: 88vh;
                             width: 50vw;
                         }
     
@@ -1153,7 +1151,6 @@ footer {
 
                         .resume-section {
                             display: none;
-                            height: 85vh;
                             width: 70vw;
                         }
     
