@@ -110,22 +110,6 @@ nav ul {
                     margin-bottom: 10px;
                 }
 
-                .home {
-
-                }
-
-                .about-me {
-
-                }
-
-                .resume {
-
-                }
-
-                .contact {
-
-                }
-
                 .home,
                 .about-me,
                 .resume,
@@ -338,9 +322,6 @@ nav ul {
 
 /* CONTACT */
 
-#contact-p {
-}
-
 .contact-alignment section {
     margin-left: 15vw;
     min-width: 50vw;
@@ -477,6 +458,22 @@ form {
                             padding: 12px;
                             border: solid black 3px;
                         }
+    
+                        .letters-right {
+                            text-align: right;
+                        }
+
+                        .letters p {
+                            margin-top: 1vh;
+                        }
+
+                        .cancel-margin-top {
+                            margin-top: 1vh;
+                        }
+
+                        .cancel-margin-top p {
+                            margin-top: 0vh;
+                        }
 
                         .letter-of-rec-container {
                             margin-left: 20vw;
@@ -536,31 +533,6 @@ footer {
 #f-nav-buttons a:visited {
 	color: #dddddd;
 }
-
-#f-home {
-    
-}
-
-#f-about-me {
-    
-}
-
-#f-resume {
-    
-}
-
-#f-web-portfolio {
-    
-}
-
-#f-writing {
-    
-}
-
-#f-contact {
-    
-}
-
 
 @media screen and (min-width: 481px) and (max-width: 1279px) {
 	
@@ -856,7 +828,7 @@ footer {
 
                         .letters {
                             display: none;
-                            height: 792px;
+                            width: 50vw;
                         }
 
                         .letter-of-rec-container {
@@ -999,9 +971,7 @@ footer {
         margin-left: 2vw;
     }
     
-    
-    
-	/* **  Web Projects ** */
+    /* **  Web Projects ** */
     
     .web-project-alignment {
         font-family: 'Lato', sans-serif;
@@ -1178,8 +1148,7 @@ footer {
 
                         .letters {
                             display: none;
-                            width: 75vw;
-                            height: 100%;
+                            width: 70vw;
                         }
 
                         .letter-of-rec-container {
