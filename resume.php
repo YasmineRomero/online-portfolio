@@ -16,26 +16,9 @@
 
 <body>
    	<div id="flex-all">
-		<aside id="bio">
-			<nav>	
-				<p class="name">Yasmine C. Romero</p>
-				<img id="profile-pic" src="images/profile-pic.JPG" alt="A photo of myself.">
-				<ul class="nav-buttons">
-					<li><a class="home" href="index.html">Home</a></li>
-					<li><a class="about-me" href="about-me.html">About Me</a></li>
-					<li><a class="resume" href="resume.html">Resume</a></li>
-					<li class="portfolio" onclick="showPortfolio()">Portfolio &#x25BC;
-						<div id="hide-portfolio">
-							<ul>
-								<li><a class="web-projects" href="web-projects.html">Web Projects</a></li>
-								<li><a class="writing" href="writing.html">Writing</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a class="contact" href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</aside>
+   	    <div id="navigation-php">
+   	        <?php include('navigation.php'); ?>
+   	    </div>
 		<main>
 			<article id="main-parallax">
 				<h1>Resume</h1>
@@ -179,21 +162,10 @@
 			</article>
 		</main>
    	</div>
-	<footer>
-        <nav>
-            <ul id="f-nav-buttons">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-me.html">About Me</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="web-projects.html">Web Projects</a></li>
-                <li><a href="writing.html">Writing</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-	</footer>
 	<script>
         resumeDisplaySlide(slideNumber);
         letterDisplaySlide(lettersSlideNumber);
     </script>
-</body>
-</html>
+    <div id="footer-php">
+   	        <?php include('footer.php'); ?>
+    </div>
