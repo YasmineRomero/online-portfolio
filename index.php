@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
- 
-    <title>Welcome!</title>
-   
-    <link rel="stylesheet" href="css/styles-10.css"> 
-    <script type="text/javascript" src="js/functionality-3.js"></script>
-    
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    
-</head>
-
-<body>
-   <div id="flex-all">
-   	    <div id="navigation-php">
-   	        <?php include('navigation.php'); ?>
-   	    </div>
+   	    <?php include('navigation.php'); ?>
         <main>
             <article>
                 <div id="home-parallax"></div>

@@ -1,4 +1,3 @@
-
 	<footer>
         <nav>
             <ul id="f-nav-buttons">

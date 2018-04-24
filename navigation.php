@@ -1,4 +1,21 @@
-		<aside id="bio">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Yasmine Romero</title>
+   
+    <link rel="stylesheet" href="css/styles-10.css"> 
+    <script type="text/javascript" src="js/functionality-3.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <div id="flex-all">
+        <aside id="bio">
 			<nav>	
 				<p class="name">Yasmine C. Romero</p>
 				<img id="profile-pic" src="images/profile-pic.JPG" alt="A photo of myself.">

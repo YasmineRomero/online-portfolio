@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
- 
-    <title>Yasmine's Portfolio</title>
-   
-    <link rel="stylesheet" href="css/styles-10.css"> 
-    <script type="text/javascript" src="js/functionality-3.js"></script>
-    
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    
-</head>
-
-<body>
-   <div id="flex-all">
-   	    <div id="navigation-php">
-   	        <?php include('navigation.php'); ?>
-   	    </div>
+   	    <?php include('navigation.php'); ?>
         <main>
             <article id="main-parallax" class="contact-alignment">
                 <section>
@@ -34,21 +14,21 @@
                     <br><br>
                     <p class="p-indents" id="contact-p">If you would like me to contact you, please put in your contact information in the fields below. Be sure to put in a valid e-mail. I will get back to you as soon as I can.</p>
                     <br><br><br>
-                    <form onsubmit="validatePhone(this.phoneNumber); return false;">
+                    <form onsubmit="validatePhone(this.phoneNumber); return false;" action="contact-form.php">
                         <label for="email" id="email">Email: * </label>
                         <br>
-                        <input type="email" id="email-function" required>
+                        <input type="email" name="email" id="email-function" placeholder="johnsmith@name.com" required>
                         <br><br>
                         <label for="phone" id="phone">Phone Number: *</label>
                         <br>
-                        <input type="number" name="phoneNumber" id="phone-function" required>
+                        <input type="number" name="phoneNumber" id="phone-function" placeholder="(555)555-5555" required>
                         <br><br>
-                        <label for="comments" id="comments">Comments: </label>
+                        <label for="comments" id="comments">Message: </label>
                         <br>
-                        <textarea cols="20" rows="10" id="comments-function"></textarea>
+                        <textarea cols="20" rows="10" id="comments-function" name="message" placeholder="Please put your message here"></textarea>
                         <br><br>
-                        <input type="submit" id="submit">
-                        <input type="reset" id="reset">
+                        <input type="submit" id="submit" name="submit">
+                        <input type="reset" id="reset" name="reset">
                     </form>
                 </section>
             </article>
