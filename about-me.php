@@ -1,4 +1,11 @@
-        <?php include('navigation.php'); ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<?php require 'head.php'; ?>
+
+<body>
+    <div id="flex-all">
+        <?php require 'navigation.php'; ?>
 		<main>
 			<article id="main-parallax" class="about-me-alignment">
 			    <section>
@@ -16,7 +23,7 @@
 			    </section>
 			</article>
 		</main>
-	</div>
-    <div id="footer-php">
-   	        <?php include('footer.php'); ?>
+        <?php require 'footer.php'; ?>
     </div>
+</body>
+</html>

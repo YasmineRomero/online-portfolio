@@ -11,7 +11,6 @@ function showPortfolio() {
         b.style.display = "block";
         c = true;
     }
-
 }
 
 // Form Validation \\
