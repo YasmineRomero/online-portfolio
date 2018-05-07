@@ -1,4 +1,11 @@
-   	    <?php include('navigation.php'); ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<?php include('header.php'); ?>
+
+<body>
+    <div id="flex-all">
+    <?php include('navigation.php'); ?>
         <main>
             <article>
                 <div id="home-parallax"></div>
@@ -14,6 +21,6 @@
             </article>
         </main>
     </div>
-    <div id="footer-php">
-   	        <?php include('footer.php'); ?>
-    </div>
+    <?php include('footer.php'); ?>
+</body>
+</html>
