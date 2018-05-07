@@ -22,7 +22,7 @@
                 </section>
 			</article>
 		</main>
-   	</div>
-    <div id="footer-php">
-   	        <?php include('footer.php'); ?>
     </div>
+    <?php require 'footer.php'; ?>
+</body>
+</html>

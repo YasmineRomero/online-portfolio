@@ -146,6 +146,6 @@
         resumeDisplaySlide(slideNumber);
         letterDisplaySlide(lettersSlideNumber);
     </script>
-    <div id="footer-php">
-   	        <?php include('footer.php'); ?>
-    </div>
+    <?php require 'footer.php'; ?>
+</body>
+</html>
