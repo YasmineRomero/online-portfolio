@@ -106,6 +106,14 @@ nav ul {
 					width: 100%;
                 }
 
+                .no-select {
+                    -webkit-touch-callout: none; /* iOS Safari */
+                    -webkit-user-select: none; /* Safari */
+                    -moz-user-select: none; /* Firefox */
+                    -ms-user-select: none; /* Internet Explorer/Edge */
+                    user-select: none; /* Chrome and Opera */
+                }
+
                 .nav-buttons li {
                     margin-bottom: 10px;
                 }
@@ -512,26 +520,28 @@ footer {
 	border-top: 5px solid black;
     background: #9f9f9f;
     color: #343434;
-    text-align: center;
 	padding-top: 10px;
 	padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
 }
 
 #f-nav-buttons {
-    font-family: 'Lato', sans-serif;
-	line-height: 35px;
+    margin-left: 33vw;
 }
 
-#f-nav-buttons li {
-	text-decoration: none;
-	font-size: 20px;
+#f-nav-buttons p {
+    font-size: 17px;
 }
 
-#f-nav-buttons a {
+#f-nav-buttons p a {
 	color: #343434;
+    margin-left: 10px;
 }
 
-#f-nav-buttons a:visited {
+#f-nav-buttons p a:visited {
 	color: #dddddd;
 }
 
@@ -861,6 +871,12 @@ footer {
                             font-family: 'Lato', sans-serif;
                             margin-right: 100px;
                         }
+    
+    /* FOOTER */
+
+    #f-nav-buttons {
+        margin-left: 10vw;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1159,4 +1175,10 @@ footer {
                         .letter-back {
                             margin-right: 50px;
                         }
+    
+    /* FOOTER */
+
+    #f-nav-buttons {
+        margin-left: 1vw;
+    }
 }

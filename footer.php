@@ -1,12 +1,5 @@
 <footer>
-    <nav>
-        <ul id="f-nav-buttons">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about-me.php">About Me</a></li>
-            <li><a href="resume.php">Resume</a></li>
-            <li><a href="web-projects.php">Web Projects</a></li>
-            <li><a href="writing.php">Writing</a></li>
-            <li><a href="contact.php">Contact</a></li>
-        </ul>
+    <nav id="f-nav-buttons">
+        <p>Yasmine Romero | 2018 |<a href="index.php">Home</a><a href="about-me.php">About Me</a><a href="resume.php">Resume</a><a href="web-projects.php">Web Projects</a><a href="writing.php">Writing</a><a href="contact.php">Contact</a></p>        
     </nav>
 </footer>

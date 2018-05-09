@@ -1,8 +1,15 @@
-   	    <?php include('navigation.php'); ?>
-		<main>
-			<article id="main-parallax" class="web-project-alignment">
+ <!DOCTYPE html>
+<html lang="en">
+
+<?php require 'head.php'; ?>
+
+<body>
+    <div id="flex-all">
+        <?php require 'navigation.php'; ?>
+            <main>
+                <article id="main-parallax" class="web-project-alignment">
 			    <section>
-                    <h1>Web Projects</h1>
+                    <h1 class="no-select">Web Projects</h1>
                     <div class="web-chunk">
                         <h2>Technology Skill: Hypertext Markup Language (HTML) and Cascading Style Sheets (CSS)</h2>
                         <h3>Project: Awareness Website</h3>

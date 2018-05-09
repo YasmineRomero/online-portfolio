@@ -1,8 +1,15 @@
-        <?php include('navigation.php'); ?>
-		<main>
-			<article id="main-parallax" class="writing-alignment">
+<!DOCTYPE html>
+<html lang="en">
+
+<?php require 'head.php'; ?>
+
+<body>
+    <div id="flex-all">
+        <?php require 'navigation.php'; ?>
+            <main>
+                <article id="main-parallax" class="writing-alignment">
                 <section>
-                    <h1>Writing</h1>
+                    <h1 class="no-select">Writing</h1>
                     <div class="essay-chunk">
                         <h2><b>Writing Sample 1:</b> "Digital Responsibility: Conscious Creators of Content"</h2>
                         <img src="images/essay-1.jpg" id="essay1" alt="My essay titled Digital Responsibility: Conscious Creators of Content.">

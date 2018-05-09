@@ -9,7 +9,7 @@
 		<main>
 			<article id="main-parallax" class="about-me-alignment">
 			    <section>
-                    <h1>About Me</h1>
+                    <h1 class="no-select">About Me</h1>
                     <br>
                     <br>
                     <p class="p-indents about-chunks">Hi, my name is Yasmine Romero and I currently live in Madera, California. I’m attending Clovis North High School as well as the Center of Advanced Research and Technology. I’m a music enthusiast and also am passionate about web development.</p>

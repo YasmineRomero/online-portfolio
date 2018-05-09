@@ -1,5 +1,5 @@
 <aside id="bio">
-    <nav>
+    <nav class="no-select">
         <p class="name">Yasmine C. Romero</p>
         <img id="profile-pic" src="images/profile-pic.JPG" alt="A photo of myself.">
         <ul class="nav-buttons">

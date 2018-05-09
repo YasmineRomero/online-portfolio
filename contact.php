@@ -1,8 +1,15 @@
-   	    <?php include('navigation.php'); ?>
-        <main>
-            <article id="main-parallax" class="contact-alignment">
+<!DOCTYPE html>
+<html lang="en">
+
+<?php require 'head.php'; ?>
+
+<body>
+    <div id="flex-all">
+        <?php require 'navigation.php'; ?>
+            <main>
+                <article id="main-parallax" class="contact-alignment">
                 <section>
-                    <h1>Contact</h1>
+                    <h1 class="no-select">Contact</h1>
                     <br>
                     <p class="p-indents" id="contact-p">Thank you for taking the time to look around at my website. I hope what you've seen shows how far my education in web design has taken me. I am available for calls from 4pm - 7pm during the week days and from 1pm - 6pm on weekends. If you would like to contact me for anything, please contact me at: yasminecromero@gmail.com</p>
                     <p class="p-indents" id="contact-p">I'm active on social media, and if you would like to take a look, you can click on the links below.</p>
