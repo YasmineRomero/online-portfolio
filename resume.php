@@ -1,4 +1,5 @@
- <!DOCTYPE html>
+<?php require('connection-init.php');?>
+<!DOCTYPE html>
 <html lang="en">
 
 <?php require 'head.php'; ?>
@@ -6,8 +7,8 @@
 <body>
     <div id="flex-all">
         <?php require 'navigation.php'; ?>
-            <main>
-                <article id="main-parallax">
+        <main>
+            <article id="main-parallax">
 				<h1 class="no-select">Resume</h1>
 				<section id="resume" class="resume-alignment">
 					<div class="resume-container">
@@ -156,3 +157,4 @@
     <?php require 'footer.php'; ?>
 </body>
 </html>
+<?php $conn->close(); ?>

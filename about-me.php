@@ -1,3 +1,4 @@
+<?php require('connection-init.php');?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,3 +28,4 @@
     <?php require 'footer.php'; ?>
 </body>
 </html>
+<?php $conn->close(); ?>

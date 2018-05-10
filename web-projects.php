@@ -1,4 +1,5 @@
- <!DOCTYPE html>
+<?php require('connection-init.php');?>
+<!DOCTYPE html>
 <html lang="en">
 
 <?php require 'head.php'; ?>
@@ -6,8 +7,8 @@
 <body>
     <div id="flex-all">
         <?php require 'navigation.php'; ?>
-            <main>
-                <article id="main-parallax" class="web-project-alignment">
+        <main>
+            <article id="main-parallax" class="web-project-alignment">
 			    <section>
                     <h1 class="no-select">Web Projects</h1>
                     <div class="web-chunk">
@@ -42,3 +43,4 @@
     <?php require 'footer.php'; ?>
 </body>
 </html>
+<?php $conn->close(); ?>

@@ -83,5 +83,3 @@ function letterDisplaySlide(a) {
     }
     x[lettersSlideNumber-1].style.display = "block";
 }
-
-// Contact Form Stuff \\

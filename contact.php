@@ -1,3 +1,4 @@
+<?php require('connection-init.php');?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,8 +7,8 @@
 <body>
     <div id="flex-all">
         <?php require 'navigation.php'; ?>
-            <main>
-                <article id="main-parallax" class="contact-alignment">
+        <main>
+            <article id="main-parallax" class="contact-alignment">
                 <section>
                     <h1 class="no-select">Contact</h1>
                     <br>
@@ -21,7 +22,7 @@
                     <br><br>
                     <p class="p-indents" id="contact-p">If you would like me to contact you, please put in your contact information in the fields below. Be sure to put in a valid e-mail. I will get back to you as soon as I can.</p>
                     <br><br><br>
-                    <form onsubmit="validatePhone(this.phoneNumber); return false;" action="contact-form.php">
+                    <form onsubmit="validatePhone(this.phoneNumber); return false;" method="post" action="">
                         <label for="email" id="email">Email: * </label>
                         <br>
                         <input type="email" name="email" id="email-function" placeholder="johnsmith@name.com" required>
@@ -41,6 +42,7 @@
             </article>
         </main>
     </div>
-    <div id="footer-php">
-   	        <?php include('footer.php'); ?>
-    </div>
+    <?php require 'footer.php'; ?>
+</body>
+</html>
+<?php $conn->close(); ?>
